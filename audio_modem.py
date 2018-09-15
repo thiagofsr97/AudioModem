@@ -1,34 +1,49 @@
 from Sender.audio_sender import Sender
 from Receiver.audio_receiver import Receiver
 import time
+import threading
+bits = []
 
 
-CLOCK_TIME = 1.0
+def read_bits(times, receiver=Receiver()):
+    for i in range(0, times):
+        bit = receiver.read_bit()
+        bits.append(bit)
+        print('BIT RECEIVED: ' + bit)
+
 
 def main():
+
     sender = Sender('resources/beepTone.wav')
     receiver = Receiver()
     receiver.start()
 
-    time.sleep(1)
+    """
+    Initiating the sender 5 seconds later
+    """
+    time.sleep(5)
 
     """
     starting protocol
     """
-    sender.play(CLOCK_TIME * 2)
+    sender.start_transmition()
 
-    string_bits = '10010010000110'
+    string_bits = '10010010'
+    p = threading.Thread(target=read_bits, args=(len(string_bits), receiver))
+    p.start()
     for bit in string_bits:
         if bit == '1':
-            time.sleep(CLOCK_TIME/2)
-            sender.play(CLOCK_TIME/2)
+            sender.send_bit_one()
 
         else:
-            sender.play(CLOCK_TIME/2)
-            time.sleep(CLOCK_TIME/2)
+            sender.send_bit_zero()
 
     receiver.shutdown()
-    if string_bits == receiver.get_result():
+    p.join()
+    result = ''.join(bits)
+    if string_bits == result:
+        print("Bits sent: " + string_bits)
+        print("Bits received: " + result)
         print("The bits matched.")
     else:
         print("The bits didn\'t matched.")
@@ -38,9 +53,6 @@ def main():
     # except KeyboardInterrupt:
     #     receiver.shutdown()
     #     thread_,join()
-
-
-
 
 
 if __name__ == "__main__":
