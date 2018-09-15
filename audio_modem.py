@@ -28,7 +28,7 @@ def main():
     """
     sender.start_transmition()
 
-    string_bits = '10010010'
+    string_bits = '01001001000000001111111111010101010000'
     p = threading.Thread(target=read_bits, args=(len(string_bits), receiver))
     p.start()
     for bit in string_bits:

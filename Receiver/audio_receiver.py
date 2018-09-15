@@ -9,7 +9,7 @@ CHANNELS = 2
 RATE = 44100
 CHUNK = 1024
 RECORD_SECONDS = 60
-THRESHOLD = 25000
+THRESHOLD = 20000
 FORMAT = pyaudio.paInt16
 ZERO_TO_ONE = 1
 ONE_TO_ZERO = 0
@@ -49,9 +49,9 @@ class Receiver:
     Print this value if you need to check the differences
     between noise and silence in order to define your THRESHOLD.
     """
+
     def _get_rms(self):
         if self._data:
-
             vol = audioop.rms(self._data, 2)
             return vol
         else:
@@ -70,11 +70,11 @@ class Receiver:
             vol = self._get_rms()
             if vol >= THRESHOLD:
                 self._logger.info('Sleeping %f seconds, protocol to start transmitting. ' % (CLOCK_TIME * 2))
-                time.sleep(CLOCK_TIME*2)
+                time.sleep(CLOCK_TIME*1.9)
                 vol = self._get_rms()
                 if vol >= THRESHOLD:
                     self._logger.info('Transmission has started.')
-                    self._start_transmission()
+                    self._initiate_transmission()
 
 
     """
@@ -85,7 +85,7 @@ class Receiver:
     transition of level, identifying if the encoded information is
     representing the bit 1 or 0.
     """
-    def _start_transmission(self):
+    def _initiate_transmission(self):
         while True:
             time.sleep(CLOCK_TIME * 0.3)
             vol = self._get_rms()
@@ -94,7 +94,6 @@ class Receiver:
                 # self._bit_buffer.append(result)
                 self._append_bit(result)
                 self._logger.info('Bit read: ' + result)
-                print(self._bit_buffer)
             else:
                 self._logger.info('Didn\'t capture transition. Returning to Idle.')
                 return

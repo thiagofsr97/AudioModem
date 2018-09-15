@@ -1,7 +1,7 @@
 import logging
 import sys
 
-CLOCK_TIME = 1
+CLOCK_TIME = .5
 
 
 class Logger:

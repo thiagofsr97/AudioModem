@@ -56,7 +56,7 @@ class Sender:
     """
     def start_transmition(self):
         self._logger.info('Playing sound for %f seconds indicating beginning of transmission.' % (CLOCK_TIME * 2))
-        self._play_for_seconds(CLOCK_TIME * 2 + 0.1)
+        self._play_for_seconds(CLOCK_TIME * 2 )
 
     def send_bit_zero(self):
         self._logger.info('Sending encoded bit 0.')
