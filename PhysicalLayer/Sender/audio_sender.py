@@ -55,8 +55,13 @@ class Sender:
     Protocol that indicates that a transmission will get initiated.
     """
     def start_transmition(self):
-        self._logger.info('Playing sound for %f seconds indicating beginning of transmission.' % (CLOCK_TIME * 2))
-        self._play_for_seconds(CLOCK_TIME * 2 )
+        self._logger.info('Playing sound for %f seconds indicating beginning of transmission.' % CLOCK_TIME)
+        self._play_for_seconds(CLOCK_TIME)
+
+    def end_transmition(self):
+        self._logger.info('Playing sound for %f seconds indicating ending of transmission.' % CLOCK_TIME)
+        self._play_for_seconds(CLOCK_TIME)
+
 
     def send_bit_zero(self):
         self._logger.info('Sending encoded bit 0.')

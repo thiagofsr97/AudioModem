@@ -4,15 +4,20 @@ import threading
 import time
 from Utils.utils import Logger
 from Utils.utils import CLOCK_TIME
+from Utils.utils import THRESHOLD
 
 CHANNELS = 2
 RATE = 44100
 CHUNK = 1024
 RECORD_SECONDS = 60
-THRESHOLD = 20000
+
 FORMAT = pyaudio.paInt16
-ZERO_TO_ONE = 1
-ONE_TO_ZERO = 0
+ZERO_TO_ONE = 10
+ONE_TO_ZERO = 5
+BIT_ZERO = 0
+BIT_ONE = 1
+FRAME_FLAG = -1
+K_SYMBOL = -2
 BUFFER_SIZE = 100
 
 
@@ -25,6 +30,7 @@ class Receiver:
         self._stream = self._pyaudio.open(format=FORMAT, channels=CHANNELS,
                                         rate=RATE, input=True, frames_per_buffer=CHUNK)
         self._is_recording = True
+        self._is_receiving = True
         self._timer = 0
         self._data = []
         self._p = threading.Thread(target=self._start)
@@ -35,6 +41,8 @@ class Receiver:
         self._empty_count = threading.Semaphore(BUFFER_SIZE)
         self._front = 0
         self._rear = 0
+        self._detector_flag = True
+
 
     """
     This function will run in a separated thread,
@@ -53,6 +61,7 @@ class Receiver:
     def _get_rms(self):
         if self._data:
             vol = audioop.rms(self._data, 2)
+            # print(vol)
             return vol
         else:
             return 0
@@ -66,14 +75,14 @@ class Receiver:
     def _start(self):
 
         self._logger.info('Idle state, waiting for transmission to start.')
-        while self._is_recording:
+        while self._is_receiving:
             vol = self._get_rms()
             if vol >= THRESHOLD:
-                self._logger.info('Sleeping %f seconds, protocol to start transmitting. ' % (CLOCK_TIME * 2))
-                time.sleep(CLOCK_TIME*1.9)
+                self._logger.info('Sleeping %f seconds, protocol to start transmitting. ' % (CLOCK_TIME))
+                time.sleep(CLOCK_TIME)
                 vol = self._get_rms()
                 if vol >= THRESHOLD:
-                    self._logger.info('Transmission has started.')
+                    self._logger.info('Transmission has started. Frame Flag detected.')
                     self._initiate_transmission()
 
 
@@ -90,13 +99,15 @@ class Receiver:
             time.sleep(CLOCK_TIME * 0.3)
             vol = self._get_rms()
             result = self._wait_for_transition(vol)
-            if result != '-1':
+            if result != FRAME_FLAG and result != K_SYMBOL:
                 # self._bit_buffer.append(result)
-                self._append_bit(result)
-                self._logger.info('Bit read: ' + result)
-            else:
-                self._logger.info('Didn\'t capture transition. Returning to Idle.')
+                self._append_bit(str(result))
+                self._logger.info('Bit read: ' + str(result))
+            elif result == FRAME_FLAG:
+                self._logger.info('FRAME FLAG detected. Closing frame and resetting state.')
                 return
+            else:
+                exit(1)
 
     """
     Waits for a transition of levels occurs, representing the information encoded
@@ -119,18 +130,23 @@ class Receiver:
     def _wait_for_transition(self, first_level):
         begin = time.time()
         after = time.time()
+        to_return = FRAME_FLAG
         while after - begin <= (CLOCK_TIME - (CLOCK_TIME * 0.3)):
             after = time.time()
             if (first_level >= THRESHOLD) and (self._get_rms() < THRESHOLD):
                 self._logger.info('Found transition from noise to silence after ' + str(after-begin) + ' seconds.')
                 self._resync(ZERO_TO_ONE)
-                return '0'
+                return BIT_ZERO
             elif (first_level < THRESHOLD) and (self._get_rms() >= THRESHOLD):
                 self._logger.info('Found transition from silence to noise after ' + str(after - begin) + ' seconds.')
                 self._resync(ONE_TO_ZERO)
-                return '1'
-            time.sleep(CLOCK_TIME * 0.1)
-        return '-1'
+                return BIT_ONE
+            elif (first_level >= THRESHOLD) and (self._get_rms() >= THRESHOLD):
+                to_return = FRAME_FLAG
+            elif (first_level < THRESHOLD) and (self._get_rms() < THRESHOLD):
+                to_return = K_SYMBOL
+
+        return to_return
 
     """
     Once a transition has occurred, it means that the receiver is supposedly at half of the Clock Time. 
@@ -150,8 +166,8 @@ class Receiver:
                 if self._get_rms() >= THRESHOLD:
                     self._logger.info("Resynchronized. Shift from 0 to 1 in %f seconds" % (after - begin))
                     break
-                else:
-                    time.sleep(CLOCK_TIME * 0.1)
+                # else:
+                #     time.sleep(CLOCK_TIME * 0.1)
                 after = time.time()
         else:
             begin = time.time()
@@ -160,8 +176,8 @@ class Receiver:
                 if self._get_rms() < THRESHOLD:
                     self._logger.info("Resynchronized. Shift from 1 to 0 in %f seconds" % (after - begin))
                     break
-                else:
-                    time.sleep(CLOCK_TIME * 0.1)
+                # else:
+                #     time.sleep(CLOCK_TIME * 0.1)
                 after = time.time()
 
     """
@@ -195,6 +211,7 @@ class Receiver:
 
     """
     Stops the threads and closes the recorder.
+    
     """
     def shutdown(self):
         self._is_recording = False
@@ -204,6 +221,41 @@ class Receiver:
         self._stream.close()
         self._pyaudio.terminate()
 
+    def switch_receiver(self):
+        if self._is_recording:
+            self._is_receiving = False
+            self._p.join()
+            self._logger.info('Receiver has been paused, not getting any audio data.')
+        else:
+            self._p = threading.Thread(target=self._start)
+            self._is_receiving = True
+            self._p.start()
+            self._logger.info('Receiver has been restarted, getting audio data.')
 
+    def is_on(self):
+        return self._is_receiving
+
+    def has_collided(self, callback=None):
+        self._detector_flag = True
+        while self._detector_flag:
+            if self._get_rms() >= THRESHOLD * 2:
+                self._logger.info('Collision has been detected. Abborting...')
+                if callback:
+                    callback()
+                    break
+            time.sleep(CLOCK_TIME * 0.1)
+
+    def detector_flag(self):
+        self._detector_flag = False
+
+    def is_there_transmission(self):
+        begin = time.time()
+        after = time.time()
+        while after - begin <= (CLOCK_TIME * 0.3):
+            after = time.time()
+            vol = self._get_rms()
+            if vol >= THRESHOLD:
+                return True
+        return False
 
 

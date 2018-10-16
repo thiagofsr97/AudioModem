@@ -1,8 +1,8 @@
 import logging
 import sys
 
-CLOCK_TIME = .5
-
+CLOCK_TIME = 1
+THRESHOLD = 10000
 
 class Logger:
     logger = None
