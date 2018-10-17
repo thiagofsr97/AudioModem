@@ -59,8 +59,8 @@ def main():
     # #     thread_,join()
     #
     linkLayer = Link()
-    time.sleep(0.5)
-    linkLayer.set_frame('1','01010101010111110')
-    linkLayer.send_frame()
+    time.sleep(2)
+    linkLayer.append_frame('1', '1110')
+
 if __name__ == "__main__":
     main()

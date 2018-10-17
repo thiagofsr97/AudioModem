@@ -5,6 +5,10 @@ import time
 from Utils.utils import Logger
 from Utils.utils import CLOCK_TIME
 from Utils.utils import THRESHOLD
+from Utils.utils import EMPTY
+from Utils.utils import K_SYMBOL
+from Utils.utils import FRAME_FLAG
+
 
 CHANNELS = 2
 RATE = 44100
@@ -16,8 +20,6 @@ ZERO_TO_ONE = 10
 ONE_TO_ZERO = 5
 BIT_ZERO = 0
 BIT_ONE = 1
-FRAME_FLAG = -1
-K_SYMBOL = -2
 BUFFER_SIZE = 100
 
 
@@ -25,29 +27,31 @@ class Receiver:
     """
     Setting things up in order to start the receiver.
     """
+
     def __init__(self):
         self._pyaudio = pyaudio.PyAudio()
         self._stream = self._pyaudio.open(format=FORMAT, channels=CHANNELS,
-                                        rate=RATE, input=True, frames_per_buffer=CHUNK)
+                                          rate=RATE, input=True, frames_per_buffer=CHUNK)
         self._is_recording = True
         self._is_receiving = True
         self._timer = 0
         self._data = []
         self._p = threading.Thread(target=self._start)
         self._recording = threading.Thread(target=self._read_data)
-        self._bit_buffer = ['-1'] * BUFFER_SIZE
+        self._bit_buffer = [str(EMPTY)] * BUFFER_SIZE
         self._logger = Logger().get_instance('Receiver')
         self._fill_count = threading.Semaphore(0)
         self._empty_count = threading.Semaphore(BUFFER_SIZE)
         self._front = 0
         self._rear = 0
         self._detector_flag = True
-
+        self._half_clock = CLOCK_TIME / 2
 
     """
     This function will run in a separated thread,
     once the recording must always be in execution.
     """
+
     def _read_data(self):
         while self._is_recording:
             self._data = self._stream.read(CHUNK)
@@ -79,12 +83,12 @@ class Receiver:
             vol = self._get_rms()
             if vol >= THRESHOLD:
                 self._logger.info('Sleeping %f seconds, protocol to start transmitting. ' % (CLOCK_TIME))
-                time.sleep(CLOCK_TIME)
+                time.sleep(CLOCK_TIME * 0.9)
                 vol = self._get_rms()
                 if vol >= THRESHOLD:
                     self._logger.info('Transmission has started. Frame Flag detected.')
+                    self._append_bit(str(FRAME_FLAG))
                     self._initiate_transmission()
-
 
     """
     Starts the transmission of bits by using Manchester Encoding.
@@ -94,34 +98,39 @@ class Receiver:
     transition of level, identifying if the encoded information is
     representing the bit 1 or 0.
     """
+
     def _initiate_transmission(self):
         while True:
             time.sleep(CLOCK_TIME * 0.3)
             vol = self._get_rms()
             result = self._wait_for_transition(vol)
+
             if result != FRAME_FLAG and result != K_SYMBOL:
                 # self._bit_buffer.append(result)
                 self._append_bit(str(result))
                 self._logger.info('Bit read: ' + str(result))
             elif result == FRAME_FLAG:
-                self._logger.info('FRAME FLAG detected. Closing frame and resetting state.')
+                print("(_initiate_transmission)String recebida: ", str("".join(self._bit_buffer)))
+                self._append_bit(str(FRAME_FLAG))
+                self._logger.info('FRAME FLAG detected. Closing frame and returning to initial state.')
                 return
             else:
-                exit(1)
+                self._logger.info('K Symbol found. Returning to initial state.')
+                return
 
     """
     Waits for a transition of levels occurs, representing the information encoded
     according to Manchester Enconding.
         Silence to Noise --> Bit 1
         Noise to Silence --> Bit 0
-    
+
     The sender has the interval of 70% of the Clock Time to send its transition.
     This amount of time helps both receiver and sender to stay synchronized, as 
     well as it stablishes a interval that once reached, tells the receiver that no 
     bits is being transmitted.
         Noise for 1 Clock Time --> J symbol
         Silence for 1 Clock Time --> K symbol
-        
+
     Return:
         1 or 0, if bits has been decoded.
         -1 if no bit has been decoded.
@@ -131,19 +140,24 @@ class Receiver:
         begin = time.time()
         after = time.time()
         to_return = FRAME_FLAG
-        while after - begin <= (CLOCK_TIME - (CLOCK_TIME * 0.3)):
+        remaining_clock_time = (CLOCK_TIME - (CLOCK_TIME * 0.3))
+
+        while after - begin <= remaining_clock_time:
             after = time.time()
-            if (first_level >= THRESHOLD) and (self._get_rms() < THRESHOLD):
-                self._logger.info('Found transition from noise to silence after ' + str(after-begin) + ' seconds.')
+            current_rms = self._get_rms()
+            if (first_level >= THRESHOLD) and (current_rms < THRESHOLD):
+                self._logger.info('Found transition from noise to silence after ' + str(after - begin) + ' seconds.')
                 self._resync(ZERO_TO_ONE)
                 return BIT_ZERO
-            elif (first_level < THRESHOLD) and (self._get_rms() >= THRESHOLD):
+            elif (first_level < THRESHOLD) and (current_rms >= THRESHOLD):
                 self._logger.info('Found transition from silence to noise after ' + str(after - begin) + ' seconds.')
                 self._resync(ONE_TO_ZERO)
                 return BIT_ONE
-            elif (first_level >= THRESHOLD) and (self._get_rms() >= THRESHOLD):
+            elif (first_level >= THRESHOLD) and (current_rms >= THRESHOLD):
+                # print("elif 2 First level {} e rms atual {}.".format(first_level, current_rms))
                 to_return = FRAME_FLAG
-            elif (first_level < THRESHOLD) and (self._get_rms() < THRESHOLD):
+            elif (first_level < THRESHOLD) and (current_rms < THRESHOLD):
+                # print("elif 3First level {} e rms atual {}.".format(first_level, current_rms))
                 to_return = K_SYMBOL
 
         return to_return
@@ -157,23 +171,27 @@ class Receiver:
     for a new transition in the interval of (Clock Time/2) seconds, indicating the start of a new bit.
     If the transition doesn't occur in this interval, it means the next bit is different from the previous one.
     """
+
     def _resync(self, transition_type):
-        self._logger.info('Trying to resynchronize. Capturing transition in a interval of %f. seconds' % (CLOCK_TIME/2))
+
+        self._logger.info(
+            'Trying to resynchronize. Capturing transition in a interval of %f. seconds' % self._half_clock)
+        begin = time.time()
+        after = time.time()
+
+        current_rms = self._get_rms()
+
         if transition_type == ZERO_TO_ONE:
-            begin = time.time()
-            after = time.time()
-            while after - begin <= (CLOCK_TIME / 2):
-                if self._get_rms() >= THRESHOLD:
+            while after - begin <= self._half_clock:
+                if current_rms >= THRESHOLD:
                     self._logger.info("Resynchronized. Shift from 0 to 1 in %f seconds" % (after - begin))
                     break
                 # else:
                 #     time.sleep(CLOCK_TIME * 0.1)
                 after = time.time()
         else:
-            begin = time.time()
-            after = time.time()
-            while after - begin <= (CLOCK_TIME / 2):
-                if self._get_rms() < THRESHOLD:
+            while after - begin <= self._half_clock:
+                if current_rms < THRESHOLD:
                     self._logger.info("Resynchronized. Shift from 1 to 0 in %f seconds" % (after - begin))
                     break
                 # else:
@@ -191,10 +209,12 @@ class Receiver:
         self._fill_count.release()
         self._front = (self._front + 1) % BUFFER_SIZE
 
+
     """
     By using synchronization with semaphores, bits are read one by one.
     Must be used in a separated thread, otherwise other processes might be blocked. 
     """
+
     def read_bit(self):
         self._fill_count.acquire()
         bit = self._bit_buffer[self._rear]
@@ -205,14 +225,16 @@ class Receiver:
     """
     It gets the receiver started in a different thread.
     """
+
     def start(self):
         self._recording.start()
         self._p.start()
 
     """
     Stops the threads and closes the recorder.
-    
+
     """
+
     def shutdown(self):
         self._is_recording = False
         self._recording.join()
@@ -238,7 +260,9 @@ class Receiver:
     def has_collided(self, callback=None):
         self._detector_flag = True
         while self._detector_flag:
-            if self._get_rms() >= THRESHOLD * 2:
+            vol = self._get_rms()
+            print(vol)
+            if vol >= THRESHOLD * 2:
                 self._logger.info('Collision has been detected. Abborting...')
                 if callback:
                     callback()

@@ -3,6 +3,11 @@ import sys
 
 CLOCK_TIME = 1
 THRESHOLD = 10000
+PC_ADDRESS = 0
+EMPTY = -1
+FRAME_FLAG = -2
+K_SYMBOL = -3
+N_ATTEMPTIVES = 10
 
 class Logger:
     logger = None
