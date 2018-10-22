@@ -8,6 +8,7 @@ from Utils.utils import THRESHOLD
 from Utils.utils import EMPTY
 from Utils.utils import K_SYMBOL
 from Utils.utils import FRAME_FLAG
+from Utils.utils import BUFFERSIZE
 
 
 CHANNELS = 2
@@ -20,8 +21,6 @@ ZERO_TO_ONE = 10
 ONE_TO_ZERO = 5
 BIT_ZERO = 0
 BIT_ONE = 1
-BUFFER_SIZE = 100
-
 
 class Receiver:
     """
@@ -38,10 +37,10 @@ class Receiver:
         self._data = []
         self._p = threading.Thread(target=self._start)
         self._recording = threading.Thread(target=self._read_data)
-        self._bit_buffer = [str(EMPTY)] * BUFFER_SIZE
+        self._bit_buffer = [str(EMPTY)] * BUFFERSIZE
         self._logger = Logger().get_instance('Receiver')
         self._fill_count = threading.Semaphore(0)
-        self._empty_count = threading.Semaphore(BUFFER_SIZE)
+        self._empty_count = threading.Semaphore(BUFFERSIZE)
         self._front = 0
         self._rear = 0
         self._detector_flag = True
@@ -207,7 +206,7 @@ class Receiver:
         self._empty_count.acquire()
         self._bit_buffer[self._front] = bit
         self._fill_count.release()
-        self._front = (self._front + 1) % BUFFER_SIZE
+        self._front = (self._front + 1) % BUFFERSIZE
 
 
     """
@@ -219,7 +218,7 @@ class Receiver:
         self._fill_count.acquire()
         bit = self._bit_buffer[self._rear]
         self._empty_count.release()
-        self._rear = (self._rear + 1) % BUFFER_SIZE
+        self._rear = (self._rear + 1) % BUFFERSIZE
         return bit
 
     """
@@ -236,6 +235,7 @@ class Receiver:
     """
 
     def shutdown(self):
+        self._logger.info('Shutting down physical layer.')
         self._is_recording = False
         self._recording.join()
         self._p.join()
@@ -261,7 +261,7 @@ class Receiver:
         self._detector_flag = True
         while self._detector_flag:
             vol = self._get_rms()
-            print(vol)
+            # print(vol)
             if vol >= THRESHOLD * 2:
                 self._logger.info('Collision has been detected. Abborting...')
                 if callback:

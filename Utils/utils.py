@@ -2,7 +2,8 @@ import logging
 import sys
 
 CLOCK_TIME = 1
-THRESHOLD = 10000
+BUFFERSIZE = 200
+THRESHOLD = 3000
 PC_ADDRESS = 0
 EMPTY = -1
 FRAME_FLAG = -2
@@ -11,7 +12,6 @@ N_ATTEMPTIVES = 10
 
 class Logger:
     logger = None
-
     def get_instance(self, logger_name):
         if (self.logger and (logger_name != self.logger.name)) or not self.logger:
             self.logger = logging.getLogger(logger_name)
