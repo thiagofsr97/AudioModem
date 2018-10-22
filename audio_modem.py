@@ -17,7 +17,7 @@ def main():
     linkLayer = Link(0,True)
     time.sleep(2)
     linkLayer.append_frame('1', '1')
-    linkLayer.shutdown()
+    # linkLayer.shutdown()
 
 if __name__ == "__main__":
     main()
