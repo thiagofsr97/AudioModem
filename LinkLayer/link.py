@@ -23,7 +23,7 @@ class Link:
         self._thread_collision_detection = []
         self._receiver = Receiver()
         self._receiver.start()
-        self._sender = Sender('resources/beepTone.wav')
+        self._sender = Sender('resources/500hz.wav', 'resources/800hz.wav')
         self._thread_sender_status = True
         self._thread_sender = threading.Thread(target=self._send_frame)
         self._thread_sender.start()
@@ -110,7 +110,7 @@ class Link:
         self._is_sending = True
         self._thread_collision_detection = threading.Thread(target=self._receiver.has_collided,
                                                             kwargs=dict(callback=self._deactivate_transmission))
-        self._thread_collision_detection.start()
+        # self._thread_collision_detection.start()
         # if self._receiver.is_on():
         #     self._receiver.switch_receiver()
         if timeout:
@@ -129,8 +129,8 @@ class Link:
         if self._is_sending:
             self._sender.end_transmition()
         # self._receiver.switch_receiver()
-        self._receiver.detector_flag()
-        self._thread_collision_detection.join()
+        # self._receiver.detector_flag()
+        # self._thread_collision_detection.join()
         if not self._is_sending:
             return False
         return True
@@ -149,5 +149,5 @@ class Link:
         self._thread_sender_status = False
         self._thread_receiver_status = False
         self._thread_sender.join()
-        self._thread_receiver.join()
+        # self._thread_receiver.join()
 

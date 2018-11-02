@@ -2,6 +2,9 @@ import pyaudio
 import audioop
 import threading
 import time
+from matplotlib.mlab import find
+import numpy as np
+import math
 from Utils.utils import Logger
 from Utils.utils import CLOCK_TIME
 from Utils.utils import THRESHOLD
@@ -9,9 +12,11 @@ from Utils.utils import EMPTY
 from Utils.utils import K_SYMBOL
 from Utils.utils import FRAME_FLAG
 from Utils.utils import BUFFERSIZE
+from Utils.utils import THRESHOLD_HIGH
+from Utils.utils import THRESHOLD_LOW
+from statistics import mode
 
-
-CHANNELS = 2
+CHANNELS = 1
 RATE = 44100
 CHUNK = 1024
 RECORD_SECONDS = 60
@@ -45,6 +50,15 @@ class Receiver:
         self._rear = 0
         self._detector_flag = True
         self._half_clock = CLOCK_TIME / 2
+        self._frequency = 0
+        self._previous = None
+
+    def _pitch(self, signal):
+        signal = np.fromstring(signal, 'Int16')
+        crossing = [math.copysign(1.0, s) for s in signal]
+        index = find(np.diff(crossing))
+        f0 = round(len(index) * RATE / (2 * np.prod(len(signal))))
+        return f0
 
     """
     This function will run in a separated thread,
@@ -52,9 +66,24 @@ class Receiver:
     """
 
     def _read_data(self):
+        buffer_ = []
+        frequency = 0
         while self._is_recording:
-            self._data = self._stream.read(CHUNK)
+            for i in range(0, 4):
+                self._data = self._stream.read(CHUNK)
+                if self._data:
+                    frequency = self._pitch(self._data)
+                    # print(self._frequency, 'hz....')
+                else:
+                    frequency = 0
+                buffer_.append(frequency)
 
+            try:
+                self._frequency = mode(buffer_)
+            except:
+                self._frequency = max(buffer_)
+            # print(self._frequency)
+            buffer_.clear()
     """
     It returns the level of the audio using RMS measure.
     Print this value if you need to check the differences
@@ -62,12 +91,17 @@ class Receiver:
     """
 
     def _get_rms(self):
-        if self._data:
-            vol = audioop.rms(self._data, 2)
-            # print(vol)
-            return vol
-        else:
-            return 0
+        freq = self._frequency
+        # print(freq)
+
+        if (freq < (THRESHOLD_HIGH + 30)) and (freq > (THRESHOLD_HIGH - 10)):
+            return THRESHOLD_HIGH
+        elif(freq < (THRESHOLD_LOW + 30)) and (freq > (THRESHOLD_LOW - 10)):
+            return THRESHOLD_LOW
+        return freq
+        # if freq > THRESHOLD_HIGH - 30:
+        #     return THRESHOLD_HIGH
+        # return THRESHOLD_LOW
 
     """
     Wait for a transition from silence to noise. If it stays for 
@@ -80,11 +114,20 @@ class Receiver:
         self._logger.info('Idle state, waiting for transmission to start.')
         while self._is_receiving:
             vol = self._get_rms()
-            if vol >= THRESHOLD:
-                self._logger.info('Sleeping %f seconds, protocol to start transmitting. ' % (CLOCK_TIME))
-                time.sleep(CLOCK_TIME * 0.9)
-                vol = self._get_rms()
-                if vol >= THRESHOLD:
+            # print(vol)
+            begin = time.time()
+            if vol == THRESHOLD_HIGH:
+                after = time.time()
+                remaining_clock_time = CLOCK_TIME * 2
+                self._logger.info('Sleeping %f seconds, protocol to start transmitting. ' % (CLOCK_TIME * 2))
+                is_ok = True
+                while after-begin <= remaining_clock_time-0.01:
+                    after = time.time()
+                    vol = self._get_rms()
+                    if not vol == THRESHOLD_HIGH:
+                        is_ok = False
+                        break
+                if is_ok:
                     self._logger.info('Transmission has started. Frame Flag detected.')
                     self._append_bit(str(FRAME_FLAG))
                     self._initiate_transmission()
@@ -102,6 +145,7 @@ class Receiver:
         while True:
             time.sleep(CLOCK_TIME * 0.3)
             vol = self._get_rms()
+            self._logger.info('Detected %f herz as first level.' % vol)
             result = self._wait_for_transition(vol)
 
             if result != FRAME_FLAG and result != K_SYMBOL:
@@ -138,27 +182,30 @@ class Receiver:
     def _wait_for_transition(self, first_level):
         begin = time.time()
         after = time.time()
-        to_return = FRAME_FLAG
+        to_return = K_SYMBOL
         remaining_clock_time = (CLOCK_TIME - (CLOCK_TIME * 0.3))
 
         while after - begin <= remaining_clock_time:
             after = time.time()
             current_rms = self._get_rms()
-            if (first_level >= THRESHOLD) and (current_rms < THRESHOLD):
+            if (first_level == THRESHOLD_LOW) and (current_rms > THRESHOLD_LOW + 100):
                 self._logger.info('Found transition from noise to silence after ' + str(after - begin) + ' seconds.')
-                self._resync(ZERO_TO_ONE)
-                return BIT_ZERO
-            elif (first_level < THRESHOLD) and (current_rms >= THRESHOLD):
-                self._logger.info('Found transition from silence to noise after ' + str(after - begin) + ' seconds.')
                 self._resync(ONE_TO_ZERO)
+                self._logger.info('Detected %f hertz as second level.' % current_rms)
+                return BIT_ZERO
+            elif (first_level == THRESHOLD_HIGH) and (current_rms < THRESHOLD_HIGH - 100):
+                self._logger.info('Found transition from silence to noise after ' + str(after - begin) + ' seconds.')
+                self._resync(ZERO_TO_ONE)
+                self._logger.info('Detected %f hertz as second level.' % current_rms)
                 return BIT_ONE
-            elif (first_level >= THRESHOLD) and (current_rms >= THRESHOLD):
+            elif (first_level == THRESHOLD_HIGH) and (current_rms == THRESHOLD_HIGH):
                 # print("elif 2 First level {} e rms atual {}.".format(first_level, current_rms))
                 to_return = FRAME_FLAG
-            elif (first_level < THRESHOLD) and (current_rms < THRESHOLD):
+            elif (first_level == THRESHOLD_LOW) and (current_rms == THRESHOLD_LOW):
                 # print("elif 3First level {} e rms atual {}.".format(first_level, current_rms))
                 to_return = K_SYMBOL
-
+            time.sleep(0.1)
+        self._logger.info('Detected % hertz as second level.' % current_rms)
         return to_return
 
     """
@@ -182,7 +229,7 @@ class Receiver:
 
         if transition_type == ZERO_TO_ONE:
             while after - begin <= self._half_clock:
-                if current_rms >= THRESHOLD:
+                if current_rms == THRESHOLD_HIGH:
                     self._logger.info("Resynchronized. Shift from 0 to 1 in %f seconds" % (after - begin))
                     break
                 # else:
@@ -190,7 +237,7 @@ class Receiver:
                 after = time.time()
         else:
             while after - begin <= self._half_clock:
-                if current_rms < THRESHOLD:
+                if current_rms == THRESHOLD_LOW:
                     self._logger.info("Resynchronized. Shift from 1 to 0 in %f seconds" % (after - begin))
                     break
                 # else:
@@ -278,7 +325,7 @@ class Receiver:
         while after - begin <= (CLOCK_TIME * 0.3):
             after = time.time()
             vol = self._get_rms()
-            if vol >= THRESHOLD:
+            if vol == THRESHOLD_HIGH or vol == THRESHOLD_LOW:
                 return True
         return False
 

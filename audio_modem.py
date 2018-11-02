@@ -14,7 +14,7 @@ def read_bits(times, receiver=Receiver()):
 
 
 def main():
-    linkLayer = Link(0,True)
+    linkLayer = Link(0, False)
     time.sleep(2)
     linkLayer.append_frame('1', '1')
     # linkLayer.shutdown()
