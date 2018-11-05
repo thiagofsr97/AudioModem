@@ -4,17 +4,28 @@ import time
 import threading
 from Utils.utils import Logger
 import crcmod
-from Utils.utils import PC_ADDRESS
 from Utils.utils import FRAME_FLAG
 from Utils.utils import N_ATTEMPTIVES
 from Utils.utils import BUFFERSIZE
 from queue import Queue
 from random import uniform
 
+MIN_LENGHT = 39
+OFFSET_DATA = 6
+
+
+"""
+Frame Structure:
+----------------------------------------------------------------------------------------------------------------------
+| Destination Mac Address (3 bits) | Source Mac Address (3 bits) | Data ( Min: 1 bits - Max: N bits) | FCS (32 bits) |
+----------------------------------------------------------------------------------------------------------------------
+
+Minimum size of frame: 39 bits
+"""
 
 class Link:
 
-    def __init__(self, pc_address, is_switch):
+    def __init__(self, pc_address):
         self._logger = Logger().get_instance('LinkLayer')
         self._crc_func = crcmod.mkCrcFun(0x104c11db7, initCrc=0, xorOut=0xFFFFFFFF)
         self._queue_buffer_receiver = Queue(BUFFERSIZE)
@@ -31,37 +42,46 @@ class Link:
         self._thread_receiver = threading.Thread(target=self._transmission_reader)
         self._thread_receiver.start()
         self._pc_address = pc_address
-        self._is_switch = is_switch
+        # self._is_switch = is_switch
 
     def _transmission_reader(self):
         while self._thread_receiver_status:
             bit = self._receiver.read_bit()
-            bit_expected = '1' if not self._is_switch else '0'
+            # bit_expected = '1' if not self._is_switch else '0'
             if bit == FRAME_FLAG:
                 frame = []
-                bit = self._receiver.read_bit()
-                if bit_expected == bit:
-                    if bit == PC_ADDRESS:
-                        while bit != FRAME_FLAG:
-                            frame.append(bit)
-                            bit = self._receiver.read_bit()
-                        if self._check_frame(frame):
-                            self._queue_buffer_receiver.put(frame)
-                            if self._is_switch:
-                                self._append_frame_non_switch(self._queue_buffer_receiver.get())
+                address = []
+                for i in range(0, 3):
+                    bit_address = self._receiver.read_bit()
+                    if bit_address != FRAME_FLAG:
+                        address.append(bit_address)
+                    else:
+                        break
+                if len(address) != 3:
+                    break
+                # bit = self._receiver.read_bit()
+                # if bit_expected == bit:
+                if ''.join(address) == self._pc_address:
+                    while bit != FRAME_FLAG:
+                        frame.append(bit)
+                        bit = self._receiver.read_bit()
+                    if self._check_frame(frame):
+                        self._queue_buffer_receiver.put(frame)
+                        # if self._is_switch:
+                        #     self._append_frame_non_switch(self._queue_buffer_receiver.get())
                         # else:
                         #     self._append_control_frame('1')
-                        frame.clear()
+                frame.clear()
+                address.clear()
 
     def _check_frame(self, frame):
-        if len(frame) < 35:
-            return False
-        else:
-            crc_bits = frame[-32:]
-            data_bits = frame[1:len(frame)-32]
-            if crc_bits != self._calculate_crc(''.join(data_bits)):
-                return False
 
+        if len(frame) < MIN_LENGHT:
+            return False
+        crc_bits = frame[-32:]
+        data_bits = frame[OFFSET_DATA:len(frame)-32]
+        if crc_bits != self._calculate_crc(''.join(data_bits)):
+            return False
         return True
 
     def _deactivate_transmission(self):
@@ -70,14 +90,14 @@ class Link:
     def _calculate_crc(self, data_bits):
         return str(format(self._crc_func(b'%d' % int(data_bits)), "b"))
 
-    def append_frame(self, address, data):
-        is_switcher_bit = '0'
-        frame = is_switcher_bit + address + data + self._calculate_crc(data)
+    def append_frame(self, destination_mac_address, source_mac_address, data):
+        # is_switcher_bit = '0'
+        frame = destination_mac_address + source_mac_address + data + self._calculate_crc(data)
         self._queue_frame_buffer.put(frame)
 
-    def _append_frame_non_switch(self, frame):
-        frame[0] = '1'
-        self._queue_frame_buffer.put(''.join(frame))
+    # def _append_frame_non_switch(self, frame):
+    #     frame[0] = '1'
+    #     self._queue_frame_buffer.put(''.join(frame))
 
     # def _append_control_frame(self, address):
     #     frame = address + '111'
@@ -86,8 +106,10 @@ class Link:
     def _send_frame(self):
         while self._thread_sender_status:
             frame = self._queue_frame_buffer.get()
-            self._logger.info('Sending frame: [[' + frame[0] + '][' + frame[1] + ']['
-                              + frame[2:len(frame)-32] + '][' + frame[-32:] + ']].')
+            # self._logger.info('Sending frame: [[' + frame[0] + '][' + frame[1] + ']['
+            #                   + frame[2:len(frame)-32] + '][' + frame[-32:] + ']].')
+            self._logger.info('| %s | %s | %s | %s |' % (frame[0:3], frame[3:6],
+                                                         frame[OFFSET_DATA:len(frame) - 32], frame[-32:]))
 
             timeout = .5
             self._logger.info('Making first attempt of transmitting the frame.')
@@ -108,8 +130,8 @@ class Link:
             # self._logger.info('Waiting for silence in order to transmit.')
 
         self._is_sending = True
-        self._thread_collision_detection = threading.Thread(target=self._receiver.has_collided,
-                                                            kwargs=dict(callback=self._deactivate_transmission))
+        # self._thread_collision_detection = threading.Thread(target=self._receiver.has_collided,
+        #                                                     kwargs=dict(callback=self._deactivate_transmission))
         # self._thread_collision_detection.start()
         # if self._receiver.is_on():
         #     self._receiver.switch_receiver()
@@ -136,11 +158,12 @@ class Link:
         return True
 
     def get_frame(self):
-        if self._is_switch:
-            self._logger.error('Only nodes that are not switches are able to read data frames.')
-            return None
+        # if self._is_switch:
+        #     self._logger.error('Only nodes that are not switches are able to read data frames.')
+        #     return None
         self._logger.info('Getting date frame from linker.')
-        return self._queue_buffer_receiver.get()
+        frame = self._queue_buffer_receiver.get()
+        return frame[0:3], frame[3:6], frame[OFFSET_DATA:len(frame) - 32], frame[-32:]
 
     def shutdown(self):
         self._receiver.shutdown()
@@ -148,6 +171,8 @@ class Link:
         self._deactivate_transmission()
         self._thread_sender_status = False
         self._thread_receiver_status = False
-        self._thread_sender.join()
-        # self._thread_receiver.join()
+        if self._thread_sender.is_alive():
+            self._thread_sender.join()
+        if self._thread_receiver.is_alive():
+            self._thread_receiver.join()
 

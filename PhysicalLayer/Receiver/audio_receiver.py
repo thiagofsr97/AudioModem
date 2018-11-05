@@ -205,7 +205,7 @@ class Receiver:
                 # print("elif 3First level {} e rms atual {}.".format(first_level, current_rms))
                 to_return = K_SYMBOL
             time.sleep(0.1)
-        self._logger.info('Detected % hertz as second level.' % current_rms)
+        self._logger.info('Detected %f hertz as second level.' % current_rms)
         return to_return
 
     """
