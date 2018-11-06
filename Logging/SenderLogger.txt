@@ -295,3 +295,174 @@
 [2018-11-06 00:45:56,003] - [Sender] - [INFO] - Sending encoded bit 0.
 [2018-11-06 00:48:28,036] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
 [2018-11-06 00:55:25,248] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:01:53,337] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:01:54,890] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:01:55,958] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:01:57,019] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:01:58,088] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:01:59,187] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:02:02,463] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:02:04,020] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:02:05,091] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:02:06,188] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:02:07,142] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:02:08,214] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:02:09,289] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:02:10,370] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:02:11,422] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:02:12,531] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:02:13,587] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:02:14,701] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:02:15,777] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:02:16,831] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:02:17,899] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:02:18,964] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:02:20,045] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:02:21,095] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:02:22,159] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:02:23,244] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:02:24,178] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:02:25,296] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:02:26,408] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:02:27,508] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:02:30,900] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:02:32,474] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:02:33,450] - [Sender] - [INFO] - Closing and terminating Sender.
+[2018-11-06 01:03:18,004] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:03:19,572] - [Sender] - [INFO] - Closing and terminating Sender.
+[2018-11-06 01:05:16,203] - [Sender] - [INFO] - Closing and terminating Sender.
+[2018-11-06 01:05:18,978] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:05:20,538] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:05:21,631] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:05:22,682] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:05:23,800] - [Sender] - [INFO] - Closing and terminating Sender.
+[2018-11-06 01:06:58,348] - [Sender] - [INFO] - Closing and terminating Sender.
+[2018-11-06 01:07:00,399] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:07:01,940] - [Sender] - [INFO] - Closing and terminating Sender.
+[2018-11-06 01:08:41,833] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:08:43,416] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:08:44,454] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:08:45,497] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:08:46,458] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:08:47,441] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:08:48,448] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:08:49,420] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:08:50,467] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:08:51,459] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:08:52,460] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:08:53,462] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:08:54,333] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:08:55,302] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:08:56,309] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:08:57,475] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:08:58,288] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:08:59,338] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:09:00,370] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:09:01,536] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:09:02,534] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:09:03,607] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:09:04,803] - [Sender] - [INFO] - Closing and terminating Sender.
+[2018-11-06 01:10:07,773] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:10:09,323] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:10:10,423] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:10:11,550] - [Sender] - [INFO] - Closing and terminating Sender.
+[2018-11-06 01:10:40,406] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:10:41,988] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:10:43,133] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:10:44,325] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:10:45,571] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:10:46,710] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:10:47,464] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:10:47,696] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:10:48,828] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:10:49,057] - [Sender] - [INFO] - Closing and terminating Sender.
+[2018-11-06 01:10:50,039] - [Sender] - [INFO] - Closing and terminating Sender.
+[2018-11-06 01:10:58,238] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:10:59,805] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:11:00,849] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:11:01,846] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:11:02,827] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:11:03,955] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:11:05,143] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:11:06,174] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:11:07,205] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:11:08,176] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:11:09,075] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:11:10,219] - [Sender] - [INFO] - Closing and terminating Sender.
+[2018-11-06 01:12:36,217] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:12:37,753] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:12:38,728] - [Sender] - [INFO] - Closing and terminating Sender.
+[2018-11-06 01:12:56,114] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:12:57,706] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:12:58,675] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:12:59,539] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:13:00,376] - [Sender] - [INFO] - Closing and terminating Sender.
+[2018-11-06 01:13:15,495] - [Sender] - [INFO] - Closing and terminating Sender.
+[2018-11-06 01:13:18,143] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:13:19,703] - [Sender] - [INFO] - Closing and terminating Sender.
+[2018-11-06 01:14:08,143] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:14:09,674] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:14:10,822] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:14:11,681] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:14:12,810] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:14:13,765] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:14:14,880] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:14:16,034] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:14:17,162] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:14:17,967] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:14:19,093] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:14:20,121] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:14:21,226] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:14:22,192] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:14:23,216] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:14:24,174] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:14:24,971] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:14:25,935] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:14:26,899] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:14:27,904] - [Sender] - [INFO] - Closing and terminating Sender.
+[2018-11-06 01:16:36,786] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:16:51,258] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:16:52,881] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:16:54,015] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:16:55,155] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:16:56,103] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:16:57,095] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:16:58,256] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:16:59,374] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:17:00,244] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:17:01,371] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:17:02,555] - [Sender] - [INFO] - Closing and terminating Sender.
+[2018-11-06 01:17:16,203] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:17:17,763] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:17:18,857] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:17:19,975] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:17:21,054] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:17:22,187] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:17:23,310] - [Sender] - [INFO] - Closing and terminating Sender.
+[2018-11-06 01:17:49,603] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:17:51,162] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:17:52,275] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:17:53,375] - [Sender] - [INFO] - Closing and terminating Sender.
+[2018-11-06 01:18:07,171] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:18:08,749] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:18:09,854] - [Sender] - [INFO] - Closing and terminating Sender.
+[2018-11-06 01:18:35,497] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:18:37,068] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:18:38,170] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:18:39,363] - [Sender] - [INFO] - Closing and terminating Sender.
+[2018-11-06 01:22:56,151] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:22:57,653] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:22:58,619] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:22:59,583] - [Sender] - [INFO] - Closing and terminating Sender.
+[2018-11-06 01:23:28,656] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:23:30,155] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:23:31,117] - [Sender] - [INFO] - Closing and terminating Sender.
+[2018-11-06 01:25:46,346] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:25:47,844] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:25:48,825] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:25:49,801] - [Sender] - [INFO] - Closing and terminating Sender.
+[2018-11-06 01:30:32,782] - [Sender] - [INFO] - Playing sound for 0.700000 seconds indicating beginning of transmission.
+[2018-11-06 01:30:34,273] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:30:35,241] - [Sender] - [INFO] - Sending encoded bit 1.
+[2018-11-06 01:30:36,207] - [Sender] - [INFO] - Sending encoded bit 0.
+[2018-11-06 01:30:37,173] - [Sender] - [INFO] - Shutting down Sender.

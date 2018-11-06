@@ -174,3 +174,121 @@ Sending packet over link layer...
 [2018-11-06 00:55:24,941] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |
 [2018-11-06 00:55:26,438] - [NetworkLayer] - [INFO] - Packet sender deactivated.
 [2018-11-06 00:55:26,516] - [NetworkLayer] - [INFO] - Packet reader deactivated.
+[2018-11-06 01:01:53,055] - [NetworkLayer] - [INFO] - Initiating network layer...
+[2018-11-06 01:01:53,090] - [NetworkLayer] - [INFO] - Adding packet to sender queue. Source IP: 10.12 Destination IP: 12.4.
+[2018-11-06 01:01:53,090] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |
+[2018-11-06 01:01:54,934] - [NetworkLayer] - [INFO] - Packet sender deactivated.
+[2018-11-06 01:02:02,038] - [NetworkLayer] - [INFO] - Initiating network layer...
+[2018-11-06 01:02:02,141] - [NetworkLayer] - [INFO] - Adding packet to sender queue. Source IP: 10.12 Destination IP: 12.4.
+[2018-11-06 01:02:02,192] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |
+[2018-11-06 01:02:05,807] - [NetworkLayer] - [INFO] - Packet sender deactivated.
+[2018-11-06 01:02:30,507] - [NetworkLayer] - [INFO] - Initiating network layer...
+[2018-11-06 01:02:30,608] - [NetworkLayer] - [INFO] - Adding packet to sender queue. Source IP: 10.12 Destination IP: 12.4.
+[2018-11-06 01:02:30,619] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |
+[2018-11-06 01:02:33,347] - [NetworkLayer] - [INFO] - Packet sender deactivated.
+[2018-11-06 01:03:17,639] - [NetworkLayer] - [INFO] - Initiating network layer...
+[2018-11-06 01:03:17,734] - [NetworkLayer] - [INFO] - Adding packet to sender queue. Source IP: 10.12 Destination IP: 12.4.
+[2018-11-06 01:03:17,755] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |
+[2018-11-06 01:03:19,387] - [NetworkLayer] - [INFO] - Packet sender deactivated.
+[2018-11-06 01:03:19,549] - [NetworkLayer] - [INFO] - Packet reader deactivated.
+[2018-11-06 01:05:18,563] - [NetworkLayer] - [INFO] - Initiating network layer...
+[2018-11-06 01:05:18,687] - [NetworkLayer] - [INFO] - Adding packet to sender queue. Source IP: 10.12 Destination IP: 12.4.
+[2018-11-06 01:05:18,696] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |
+[2018-11-06 01:05:23,060] - [NetworkLayer] - [INFO] - Packet sender deactivated.
+[2018-11-06 01:05:23,196] - [NetworkLayer] - [INFO] - Packet reader deactivated.
+[2018-11-06 01:07:00,011] - [NetworkLayer] - [INFO] - Initiating network layer...
+[2018-11-06 01:07:00,103] - [NetworkLayer] - [INFO] - Adding packet to sender queue. Source IP: 10.12 Destination IP: 12.4.
+[2018-11-06 01:07:00,133] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |
+[2018-11-06 01:07:01,385] - [NetworkLayer] - [INFO] - Packet sender deactivated.
+[2018-11-06 01:07:01,472] - [NetworkLayer] - [INFO] - Packet reader deactivated.
+[2018-11-06 01:08:41,250] - [NetworkLayer] - [INFO] - Initiating network layer...
+[2018-11-06 01:08:41,369] - [NetworkLayer] - [INFO] - Adding packet to sender queue. Source IP: 10.12 Destination IP: 12.4.
+[2018-11-06 01:08:41,400] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |
+[2018-11-06 01:09:03,592] - [NetworkLayer] - [INFO] - Packet sender deactivated.
+[2018-11-06 01:09:03,806] - [NetworkLayer] - [INFO] - Packet reader deactivated.
+[2018-11-06 01:10:07,387] - [NetworkLayer] - [INFO] - Initiating network layer...
+[2018-11-06 01:10:07,449] - [NetworkLayer] - [INFO] - Adding packet to sender queue. Source IP: 10.12 Destination IP: 12.4.
+[2018-11-06 01:10:07,472] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |
+[2018-11-06 01:10:11,308] - [NetworkLayer] - [INFO] - Packet sender deactivated.
+[2018-11-06 01:10:11,411] - [NetworkLayer] - [INFO] - Packet reader deactivated.
+[2018-11-06 01:10:39,815] - [NetworkLayer] - [INFO] - Initiating network layer...
+[2018-11-06 01:10:39,956] - [NetworkLayer] - [INFO] - Adding packet to sender queue. Source IP: 10.12 Destination IP: 12.4.
+[2018-11-06 01:10:40,033] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |
+[2018-11-06 01:10:47,023] - [NetworkLayer] - [INFO] - Initiating network layer...
+[2018-11-06 01:10:47,097] - [NetworkLayer] - [INFO] - Adding packet to sender queue. Source IP: 10.12 Destination IP: 12.4.
+[2018-11-06 01:10:47,133] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |
+[2018-11-06 01:10:48,670] - [NetworkLayer] - [INFO] - Packet sender deactivated.
+[2018-11-06 01:10:48,725] - [NetworkLayer] - [INFO] - Packet sender deactivated.
+[2018-11-06 01:10:48,896] - [NetworkLayer] - [INFO] - Packet reader deactivated.
+[2018-11-06 01:10:48,954] - [NetworkLayer] - [INFO] - Packet reader deactivated.
+[2018-11-06 01:10:57,745] - [NetworkLayer] - [INFO] - Initiating network layer...
+[2018-11-06 01:10:57,856] - [NetworkLayer] - [INFO] - Adding packet to sender queue. Source IP: 10.12 Destination IP: 12.4.
+[2018-11-06 01:10:57,907] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |
+[2018-11-06 01:11:09,926] - [NetworkLayer] - [INFO] - Packet sender deactivated.
+[2018-11-06 01:11:10,182] - [NetworkLayer] - [INFO] - Packet reader deactivated.
+[2018-11-06 01:12:35,887] - [NetworkLayer] - [INFO] - Initiating network layer...
+[2018-11-06 01:12:35,945] - [NetworkLayer] - [INFO] - Adding packet to sender queue. Source IP: 10.12 Destination IP: 12.4.
+[2018-11-06 01:12:35,961] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |
+[2018-11-06 01:12:38,488] - [NetworkLayer] - [INFO] - Packet sender deactivated.
+[2018-11-06 01:12:38,538] - [NetworkLayer] - [INFO] - Packet reader deactivated.
+[2018-11-06 01:12:55,560] - [NetworkLayer] - [INFO] - Initiating network layer...
+[2018-11-06 01:12:55,769] - [NetworkLayer] - [INFO] - Adding packet to sender queue. Source IP: 10.12 Destination IP: 12.4.
+[2018-11-06 01:12:55,817] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |
+[2018-11-06 01:12:59,816] - [NetworkLayer] - [INFO] - Packet sender deactivated.
+[2018-11-06 01:12:59,919] - [NetworkLayer] - [INFO] - Packet reader deactivated.
+[2018-11-06 01:13:17,738] - [NetworkLayer] - [INFO] - Initiating network layer...
+[2018-11-06 01:13:17,809] - [NetworkLayer] - [INFO] - Adding packet to sender queue. Source IP: 10.12 Destination IP: 12.4.
+[2018-11-06 01:13:17,871] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |
+[2018-11-06 01:13:19,080] - [NetworkLayer] - [INFO] - Packet sender deactivated.
+[2018-11-06 01:13:19,172] - [NetworkLayer] - [INFO] - Packet reader deactivated.
+[2018-11-06 01:14:07,714] - [NetworkLayer] - [INFO] - Initiating network layer...
+[2018-11-06 01:14:07,830] - [NetworkLayer] - [INFO] - Adding packet to sender queue. Source IP: 10.12 Destination IP: 12.4.
+[2018-11-06 01:14:07,869] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |
+[2018-11-06 01:14:26,809] - [NetworkLayer] - [INFO] - Packet sender deactivated.
+[2018-11-06 01:14:26,970] - [NetworkLayer] - [INFO] - Packet reader deactivated.
+[2018-11-06 01:16:36,440] - [NetworkLayer] - [INFO] - Initiating network layer...
+[2018-11-06 01:16:36,495] - [NetworkLayer] - [INFO] - Adding packet to sender queue. Source IP: 10.12 Destination IP: 12.4.
+[2018-11-06 01:16:36,506] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |
+[2018-11-06 01:16:37,922] - [NetworkLayer] - [INFO] - Packet sender deactivated.
+[2018-11-06 01:16:38,013] - [NetworkLayer] - [INFO] - Packet reader deactivated.
+[2018-11-06 01:16:50,772] - [NetworkLayer] - [INFO] - Initiating network layer...
+[2018-11-06 01:16:50,842] - [NetworkLayer] - [INFO] - Adding packet to sender queue. Source IP: 10.12 Destination IP: 12.4.
+[2018-11-06 01:16:50,924] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |
+[2018-11-06 01:17:01,977] - [NetworkLayer] - [INFO] - Packet sender deactivated.
+[2018-11-06 01:17:02,074] - [NetworkLayer] - [INFO] - Packet reader deactivated.
+[2018-11-06 01:17:15,833] - [NetworkLayer] - [INFO] - Initiating network layer...
+[2018-11-06 01:17:15,909] - [NetworkLayer] - [INFO] - Adding packet to sender queue. Source IP: 10.12 Destination IP: 12.4.
+[2018-11-06 01:17:15,922] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |
+[2018-11-06 01:17:22,869] - [NetworkLayer] - [INFO] - Packet sender deactivated.
+[2018-11-06 01:17:22,980] - [NetworkLayer] - [INFO] - Packet reader deactivated.
+[2018-11-06 01:17:49,141] - [NetworkLayer] - [INFO] - Initiating network layer...
+[2018-11-06 01:17:49,267] - [NetworkLayer] - [INFO] - Adding packet to sender queue. Source IP: 10.12 Destination IP: 12.4.
+[2018-11-06 01:17:49,298] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |
+[2018-11-06 01:17:52,356] - [NetworkLayer] - [INFO] - Packet sender deactivated.
+[2018-11-06 01:17:52,463] - [NetworkLayer] - [INFO] - Packet reader deactivated.
+[2018-11-06 01:18:06,491] - [NetworkLayer] - [INFO] - Initiating network layer...
+[2018-11-06 01:18:06,574] - [NetworkLayer] - [INFO] - Adding packet to sender queue. Source IP: 10.12 Destination IP: 12.4.
+[2018-11-06 01:18:06,585] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |
+[2018-11-06 01:18:09,398] - [NetworkLayer] - [INFO] - Packet sender deactivated.
+[2018-11-06 01:18:09,492] - [NetworkLayer] - [INFO] - Packet reader deactivated.
+[2018-11-06 01:18:35,009] - [NetworkLayer] - [INFO] - Initiating network layer...
+[2018-11-06 01:18:35,063] - [NetworkLayer] - [INFO] - Adding packet to sender queue. Source IP: 10.12 Destination IP: 12.4.
+[2018-11-06 01:18:35,087] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |
+[2018-11-06 01:18:38,975] - [NetworkLayer] - [INFO] - Packet sender deactivated.
+[2018-11-06 01:18:39,057] - [NetworkLayer] - [INFO] - Packet reader deactivated.
+[2018-11-06 01:22:55,851] - [NetworkLayer] - [INFO] - Initiating network layer...
+[2018-11-06 01:22:55,883] - [NetworkLayer] - [INFO] - Adding packet to sender queue. Source IP: 10.12 Destination IP: 12.4.
+[2018-11-06 01:22:55,905] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |
+[2018-11-06 01:22:58,588] - [NetworkLayer] - [INFO] - Packet sender deactivated.
+[2018-11-06 01:22:58,678] - [NetworkLayer] - [INFO] - Packet reader deactivated.
+[2018-11-06 01:23:28,370] - [NetworkLayer] - [INFO] - Initiating network layer...
+[2018-11-06 01:23:28,393] - [NetworkLayer] - [INFO] - Adding packet to sender queue. Source IP: 10.12 Destination IP: 12.4.
+[2018-11-06 01:23:28,418] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |
+[2018-11-06 01:23:30,606] - [NetworkLayer] - [INFO] - Packet sender deactivated.
+[2018-11-06 01:23:30,622] - [NetworkLayer] - [INFO] - Packet reader deactivated.
+[2018-11-06 01:25:46,036] - [NetworkLayer] - [INFO] - Initiating network layer...
+[2018-11-06 01:25:46,090] - [NetworkLayer] - [INFO] - Adding packet to sender queue. Source IP: 10.12 Destination IP: 12.4.
+[2018-11-06 01:25:46,116] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |
+[2018-11-06 01:30:32,511] - [NetworkLayer] - [INFO] - Initiating network layer...
+[2018-11-06 01:30:32,538] - [NetworkLayer] - [INFO] - Adding packet to sender queue. Source IP: 10.12 Destination IP: 12.4.
+[2018-11-06 01:30:32,549] - [NetworkLayer] - [INFO] - Sending packet over link layer.  Packet: | 010 | 000 | 10101100 | 11000100 | 1 |

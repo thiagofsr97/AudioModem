@@ -84,6 +84,7 @@ class Receiver:
                 self._frequency = max(buffer_)
             # print(self._frequency)
             buffer_.clear()
+
     """
     It returns the level of the audio using RMS measure.
     Print this value if you need to check the differences
@@ -127,11 +128,10 @@ class Receiver:
                     if not vol == THRESHOLD_HIGH:
                         is_ok = False
                         break
-                if is_ok:
+                if is_ok and self._is_receiving:
                     self._logger.info('Transmission has started. Frame Flag detected.')
                     self._append_bit(str(FRAME_FLAG))
                     self._initiate_transmission()
-        self._logger.info('Receiver thread deactivated.')
 
     """
     Starts the transmission of bits by using Manchester Encoding.
@@ -283,7 +283,7 @@ class Receiver:
     """
 
     def shutdown(self):
-        self._logger.info('Shutting down physical layer.')
+        self._logger.info('Shutting down Receiver.')
         self._is_recording = False
         self._is_receiving = False
 
@@ -291,7 +291,10 @@ class Receiver:
             self._p.join()
         if self._recording.is_alive():
             self._recording.join()
+
+        # append to unlock any thread sleeping because of the buffer
         self._append_bit('1')
+
         self._stream.stop_stream()
         self._stream.close()
         self._pyaudio.terminate()

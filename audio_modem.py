@@ -20,7 +20,6 @@ def read_bits(times, receiver=Receiver()):
 
 def signal_handler(signal, frame):
     network.shutdown()
-    sys.exit(1)
 
 def main():
     global network
@@ -28,7 +27,6 @@ def main():
     network.start()
     network.append_packet('10.12', '12.4','1')
     signal.signal(signal.SIGINT, signal_handler)
-    time.sleep(1000)
 
 
 if __name__ == "__main__":

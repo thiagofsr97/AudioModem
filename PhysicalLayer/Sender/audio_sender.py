@@ -80,7 +80,8 @@ class Sender:
         self._play_for_seconds(CLOCK_TIME/2, self._wave_file)
 
     def close(self):
-        self._logger('Closing and terminating Sender.')
+        self._logger.info('Shutting down Sender.')
+
         self._wave_file.close()
         self._pyaudio.terminate()
 

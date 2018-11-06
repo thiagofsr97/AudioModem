@@ -186,3 +186,121 @@
 [2018-11-06 00:55:26,503] - [LinkLayer] - [INFO] - Transmission Reader Deactivated.
 [2018-11-06 00:55:26,515] - [LinkLayer] - [INFO] - Shutting down linker.
 [2018-11-06 00:55:26,802] - [LinkLayer] - [INFO] - Frame Sender Deactivated.
+[2018-11-06 01:01:50,038] - [LinkLayer] - [INFO] - Shutting down linker.
+[2018-11-06 01:01:53,092] - [LinkLayer] - [INFO] - Sending frame: | 010 | 000 | 10101100110001001 | 11010010101000101011110001100100 |
+[2018-11-06 01:01:53,093] - [LinkLayer] - [INFO] - Making first attempt of transmitting the frame.
+[2018-11-06 01:01:54,946] - [LinkLayer] - [INFO] - Transmission Reader Deactivated.
+[2018-11-06 01:02:02,194] - [LinkLayer] - [INFO] - Sending frame: | 010 | 000 | 10101100110001001 | 11010010101000101011110001100100 |
+[2018-11-06 01:02:02,200] - [LinkLayer] - [INFO] - Making first attempt of transmitting the frame.
+[2018-11-06 01:02:05,908] - [LinkLayer] - [INFO] - Transmission Reader Deactivated.
+[2018-11-06 01:02:30,652] - [LinkLayer] - [INFO] - Sending frame: | 010 | 000 | 10101100110001001 | 11010010101000101011110001100100 |
+[2018-11-06 01:02:30,663] - [LinkLayer] - [INFO] - Making first attempt of transmitting the frame.
+[2018-11-06 01:02:33,445] - [LinkLayer] - [INFO] - Transmission Reader Deactivated.
+[2018-11-06 01:03:17,766] - [LinkLayer] - [INFO] - Sending frame: | 010 | 000 | 10101100110001001 | 11010010101000101011110001100100 |
+[2018-11-06 01:03:17,766] - [LinkLayer] - [INFO] - Making first attempt of transmitting the frame.
+[2018-11-06 01:03:19,495] - [LinkLayer] - [INFO] - Transmission Reader Deactivated.
+[2018-11-06 01:03:19,522] - [LinkLayer] - [INFO] - Shutting down linker.
+[2018-11-06 01:03:19,571] - [LinkLayer] - [INFO] - Frame Sender Deactivated.
+[2018-11-06 01:05:16,193] - [LinkLayer] - [INFO] - Shutting down linker.
+[2018-11-06 01:05:18,745] - [LinkLayer] - [INFO] - Sending frame: | 010 | 000 | 10101100110001001 | 11010010101000101011110001100100 |
+[2018-11-06 01:05:18,750] - [LinkLayer] - [INFO] - Making first attempt of transmitting the frame.
+[2018-11-06 01:05:23,137] - [LinkLayer] - [INFO] - Transmission Reader Deactivated.
+[2018-11-06 01:05:23,143] - [LinkLayer] - [INFO] - Shutting down linker.
+[2018-11-06 01:05:23,794] - [LinkLayer] - [INFO] - Frame Sender Deactivated.
+[2018-11-06 01:06:58,332] - [LinkLayer] - [INFO] - Shutting down linker.
+[2018-11-06 01:07:00,151] - [LinkLayer] - [INFO] - Sending frame: | 010 | 000 | 10101100110001001 | 11010010101000101011110001100100 |
+[2018-11-06 01:07:00,157] - [LinkLayer] - [INFO] - Making first attempt of transmitting the frame.
+[2018-11-06 01:07:01,455] - [LinkLayer] - [INFO] - Transmission Reader Deactivated.
+[2018-11-06 01:07:01,456] - [LinkLayer] - [INFO] - Shutting down linker.
+[2018-11-06 01:07:01,929] - [LinkLayer] - [INFO] - Frame Sender Deactivated.
+[2018-11-06 01:08:41,438] - [LinkLayer] - [INFO] - Sending frame: | 010 | 000 | 10101100110001001 | 11010010101000101011110001100100 |
+[2018-11-06 01:08:41,456] - [LinkLayer] - [INFO] - Making first attempt of transmitting the frame.
+[2018-11-06 01:09:03,731] - [LinkLayer] - [INFO] - Transmission Reader Deactivated.
+[2018-11-06 01:09:03,764] - [LinkLayer] - [INFO] - Shutting down linker.
+[2018-11-06 01:09:04,787] - [LinkLayer] - [INFO] - Frame Sender Deactivated.
+[2018-11-06 01:10:07,489] - [LinkLayer] - [INFO] - Sending frame: | 010 | 000 | 10101100110001001 | 11010010101000101011110001100100 |
+[2018-11-06 01:10:07,539] - [LinkLayer] - [INFO] - Making first attempt of transmitting the frame.
+[2018-11-06 01:10:11,403] - [LinkLayer] - [INFO] - Transmission Reader Deactivated.
+[2018-11-06 01:10:11,409] - [LinkLayer] - [INFO] - Shutting down linker.
+[2018-11-06 01:10:11,549] - [LinkLayer] - [INFO] - Frame Sender Deactivated.
+[2018-11-06 01:10:40,065] - [LinkLayer] - [INFO] - Sending frame: | 010 | 000 | 10101100110001001 | 11010010101000101011110001100100 |
+[2018-11-06 01:10:40,078] - [LinkLayer] - [INFO] - Making first attempt of transmitting the frame.
+[2018-11-06 01:10:47,144] - [LinkLayer] - [INFO] - Sending frame: | 010 | 000 | 10101100110001001 | 11010010101000101011110001100100 |
+[2018-11-06 01:10:47,170] - [LinkLayer] - [INFO] - Making first attempt of transmitting the frame.
+[2018-11-06 01:10:48,800] - [LinkLayer] - [INFO] - Transmission Reader Deactivated.
+[2018-11-06 01:10:48,847] - [LinkLayer] - [INFO] - Transmission Reader Deactivated.
+[2018-11-06 01:10:48,822] - [LinkLayer] - [INFO] - Shutting down linker.
+[2018-11-06 01:10:48,872] - [LinkLayer] - [INFO] - Shutting down linker.
+[2018-11-06 01:10:49,040] - [LinkLayer] - [INFO] - Frame Sender Deactivated.
+[2018-11-06 01:10:50,027] - [LinkLayer] - [INFO] - Frame Sender Deactivated.
+[2018-11-06 01:10:57,925] - [LinkLayer] - [INFO] - Sending frame: | 010 | 000 | 10101100110001001 | 11010010101000101011110001100100 |
+[2018-11-06 01:10:57,967] - [LinkLayer] - [INFO] - Making first attempt of transmitting the frame.
+[2018-11-06 01:11:10,079] - [LinkLayer] - [INFO] - Transmission Reader Deactivated.
+[2018-11-06 01:11:10,097] - [LinkLayer] - [INFO] - Shutting down linker.
+[2018-11-06 01:11:10,205] - [LinkLayer] - [INFO] - Frame Sender Deactivated.
+[2018-11-06 01:12:35,972] - [LinkLayer] - [INFO] - Sending frame: | 010 | 000 | 10101100110001001 | 11010010101000101011110001100100 |
+[2018-11-06 01:12:35,972] - [LinkLayer] - [INFO] - Making first attempt of transmitting the frame.
+[2018-11-06 01:12:38,532] - [LinkLayer] - [INFO] - Transmission Reader Deactivated.
+[2018-11-06 01:12:38,537] - [LinkLayer] - [INFO] - Shutting down linker.
+[2018-11-06 01:12:38,722] - [LinkLayer] - [INFO] - Frame Sender Deactivated.
+[2018-11-06 01:12:55,838] - [LinkLayer] - [INFO] - Sending frame: | 010 | 000 | 10101100110001001 | 11010010101000101011110001100100 |
+[2018-11-06 01:12:55,848] - [LinkLayer] - [INFO] - Making first attempt of transmitting the frame.
+[2018-11-06 01:12:59,900] - [LinkLayer] - [INFO] - Transmission Reader Deactivated.
+[2018-11-06 01:12:59,909] - [LinkLayer] - [INFO] - Shutting down linker.
+[2018-11-06 01:13:00,363] - [LinkLayer] - [INFO] - Frame Sender Deactivated.
+[2018-11-06 01:13:15,474] - [LinkLayer] - [INFO] - Shutting down linker.
+[2018-11-06 01:13:17,896] - [LinkLayer] - [INFO] - Sending frame: | 010 | 000 | 10101100110001001 | 11010010101000101011110001100100 |
+[2018-11-06 01:13:17,905] - [LinkLayer] - [INFO] - Making first attempt of transmitting the frame.
+[2018-11-06 01:13:19,145] - [LinkLayer] - [INFO] - Transmission Reader Deactivated.
+[2018-11-06 01:13:19,157] - [LinkLayer] - [INFO] - Shutting down linker.
+[2018-11-06 01:13:19,686] - [LinkLayer] - [INFO] - Frame Sender Deactivated.
+[2018-11-06 01:14:07,897] - [LinkLayer] - [INFO] - Sending frame: | 010 | 000 | 10101100110001001 | 11010010101000101011110001100100 |
+[2018-11-06 01:14:07,903] - [LinkLayer] - [INFO] - Making first attempt of transmitting the frame.
+[2018-11-06 01:14:26,895] - [LinkLayer] - [INFO] - Transmission Reader Deactivated.
+[2018-11-06 01:14:26,929] - [LinkLayer] - [INFO] - Shutting down linker.
+[2018-11-06 01:14:27,893] - [LinkLayer] - [INFO] - Frame Sender Deactivated.
+[2018-11-06 01:16:36,517] - [LinkLayer] - [INFO] - Sending frame: | 010 | 000 | 10101100110001001 | 11010010101000101011110001100100 |
+[2018-11-06 01:16:36,518] - [LinkLayer] - [INFO] - Making first attempt of transmitting the frame.
+[2018-11-06 01:16:37,970] - [LinkLayer] - [INFO] - Transmission Reader Deactivated.
+[2018-11-06 01:16:37,981] - [LinkLayer] - [INFO] - Shutting down linker.
+[2018-11-06 01:16:50,941] - [LinkLayer] - [INFO] - Sending frame: | 010 | 000 | 10101100110001001 | 11010010101000101011110001100100 |
+[2018-11-06 01:16:50,957] - [LinkLayer] - [INFO] - Making first attempt of transmitting the frame.
+[2018-11-06 01:17:02,044] - [LinkLayer] - [INFO] - Transmission Reader Deactivated.
+[2018-11-06 01:17:02,059] - [LinkLayer] - [INFO] - Shutting down linker.
+[2018-11-06 01:17:02,522] - [LinkLayer] - [INFO] - Frame Sender Deactivated.
+[2018-11-06 01:17:15,933] - [LinkLayer] - [INFO] - Sending frame: | 010 | 000 | 10101100110001001 | 11010010101000101011110001100100 |
+[2018-11-06 01:17:15,938] - [LinkLayer] - [INFO] - Making first attempt of transmitting the frame.
+[2018-11-06 01:17:22,947] - [LinkLayer] - [INFO] - Transmission Reader Deactivated.
+[2018-11-06 01:17:22,963] - [LinkLayer] - [INFO] - Shutting down linker.
+[2018-11-06 01:17:23,293] - [LinkLayer] - [INFO] - Frame Sender Deactivated.
+[2018-11-06 01:17:49,343] - [LinkLayer] - [INFO] - Sending frame: | 010 | 000 | 10101100110001001 | 11010010101000101011110001100100 |
+[2018-11-06 01:17:49,377] - [LinkLayer] - [INFO] - Making first attempt of transmitting the frame.
+[2018-11-06 01:17:52,417] - [LinkLayer] - [INFO] - Transmission Reader Deactivated.
+[2018-11-06 01:17:52,430] - [LinkLayer] - [INFO] - Shutting down linker.
+[2018-11-06 01:17:53,374] - [LinkLayer] - [INFO] - Frame Sender Deactivated.
+[2018-11-06 01:18:06,593] - [LinkLayer] - [INFO] - Sending frame: | 010 | 000 | 10101100110001001 | 11010010101000101011110001100100 |
+[2018-11-06 01:18:06,604] - [LinkLayer] - [INFO] - Making first attempt of transmitting the frame.
+[2018-11-06 01:18:09,465] - [LinkLayer] - [INFO] - Transmission Reader Deactivated.
+[2018-11-06 01:18:09,476] - [LinkLayer] - [INFO] - Shutting down linker.
+[2018-11-06 01:18:09,842] - [LinkLayer] - [INFO] - Frame Sender Deactivated.
+[2018-11-06 01:18:35,128] - [LinkLayer] - [INFO] - Sending frame: | 010 | 000 | 10101100110001001 | 11010010101000101011110001100100 |
+[2018-11-06 01:18:35,174] - [LinkLayer] - [INFO] - Making first attempt of transmitting the frame.
+[2018-11-06 01:18:39,041] - [LinkLayer] - [INFO] - Transmission Reader Deactivated.
+[2018-11-06 01:18:39,054] - [LinkLayer] - [INFO] - Shutting down linker.
+[2018-11-06 01:18:39,347] - [LinkLayer] - [INFO] - Frame Sender Deactivated.
+[2018-11-06 01:22:55,911] - [LinkLayer] - [INFO] - Sending frame: | 010 | 000 | 10101100110001001 | 11010010101000101011110001100100 |
+[2018-11-06 01:22:55,916] - [LinkLayer] - [INFO] - Making first attempt of transmitting the frame.
+[2018-11-06 01:22:58,675] - [LinkLayer] - [INFO] - Transmission Reader Deactivated.
+[2018-11-06 01:22:58,677] - [LinkLayer] - [INFO] - Shutting down linker.
+[2018-11-06 01:22:59,582] - [LinkLayer] - [INFO] - Frame Sender Deactivated.
+[2018-11-06 01:23:28,424] - [LinkLayer] - [INFO] - Sending frame: | 010 | 000 | 10101100110001001 | 11010010101000101011110001100100 |
+[2018-11-06 01:23:28,435] - [LinkLayer] - [INFO] - Making first attempt of transmitting the frame.
+[2018-11-06 01:23:30,619] - [LinkLayer] - [INFO] - Transmission Reader Deactivated.
+[2018-11-06 01:23:30,621] - [LinkLayer] - [INFO] - Shutting down linker.
+[2018-11-06 01:23:31,116] - [LinkLayer] - [INFO] - Frame Sender Deactivated.
+[2018-11-06 01:25:46,117] - [LinkLayer] - [INFO] - Sending frame: | 010 | 000 | 10101100110001001 | 11010010101000101011110001100100 |
+[2018-11-06 01:25:46,122] - [LinkLayer] - [INFO] - Making first attempt of transmitting the frame.
+[2018-11-06 01:25:49,472] - [LinkLayer] - [INFO] - Shutting down linker.
+[2018-11-06 01:30:32,549] - [LinkLayer] - [INFO] - Sending frame: | 010 | 000 | 10101100110001001 | 11010010101000101011110001100100 |
+[2018-11-06 01:30:32,566] - [LinkLayer] - [INFO] - Making first attempt of transmitting the frame.
+[2018-11-06 01:30:36,871] - [LinkLayer] - [INFO] - Shutting down linker.

@@ -49,7 +49,6 @@ class Network:
             self._thread_reader.join()
         if self._thread_sender and self._thread_reader.is_alive():
             self._thread_sender.join()
-        print(threading.enumerate())
 
 
     def _convert_ip_bin(self, ip):
@@ -76,7 +75,7 @@ class Network:
                                packet[2][IP_BITS_LENGHT:IP_BITS_LENGHT*2],
                                packet[2][IP_BITS_LENGHT*2:]))
             self._linker.append_frame(packet[0], packet[1], packet[2])
-        self._logger.info('Packet sender deactivated.')
+
 
     def _read_packet(self):
         while self._is_reading_packets:
@@ -107,4 +106,3 @@ class Network:
 
                 else:
                     self._logger.error('Packet read couldn\'t be redirected. Dispatching it...')
-        self._logger.info('Packet reader deactivated.')

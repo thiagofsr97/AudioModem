@@ -32,9 +32,8 @@ class Link:
         self._queue_frame_buffer = Queue(BUFFERSIZE)
         self._is_sending = True
         self._thread_collision_detection = []
-        self._receiver = Receiver()
-        self._receiver.start()
-        self._sender = Sender('resources/500hz.wav', 'resources/800hz.wav')
+        self._receiver = None
+        self._sender = None
         self._thread_sender_status = True
         self._thread_receiver_status = True
         self._thread_sender = None
@@ -69,15 +68,19 @@ class Link:
         self._thread_sender_status = False
         self._receiver.shutdown()
 
+
         self._logger.info('Shutting down linker.')
         self._deactivate_transmission()
         self._shutdown = True
 
+        #unlocking threads that depend on these buffers
         self._queue_frame_buffer.put('')
         self._queue_buffer_receiver.put('')
 
         if self._thread_sender and self._thread_sender.is_alive():
             self._thread_sender.join()
+        self._sender.close()
+
         if self._thread_receiver and self._thread_receiver.is_alive():
             self._thread_receiver.join()
 
@@ -121,7 +124,6 @@ class Link:
                         #     self._append_control_frame('1')
                 frame.clear()
                 address.clear()
-        self._logger.info('Transmission Reader Deactivated.')
 
     def _check_frame(self, frame):
         if len(frame) < MIN_LENGHT:
@@ -173,7 +175,6 @@ class Link:
                         if i + 1 == N_ATTEMPTIVES:
                             self._logger.info('Number of attemps reached, aborting transmission.')
                         timeout=timeout*2
-        self._logger.info('Frame Sender Deactivated.')
 
     def _send_attemptive(self, frame, timeout=None):
         while self._receiver.is_there_transmission():
