@@ -107,3 +107,4 @@ class Network:
 
                 else:
                     self._logger.error('Packet read couldn\'t be redirected. Dispatching it...')
+        self._logger.info('Packet reader deactivated.')

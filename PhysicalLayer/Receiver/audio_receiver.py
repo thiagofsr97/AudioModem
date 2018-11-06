@@ -285,8 +285,13 @@ class Receiver:
     def shutdown(self):
         self._logger.info('Shutting down physical layer.')
         self._is_recording = False
-        self._recording.join()
-        self._p.join()
+        self._is_receiving = False
+
+        if self._p.is_alive():
+            self._p.join()
+        if self._recording.is_alive():
+            self._recording.join()
+        self._append_bit('1')
         self._stream.stop_stream()
         self._stream.close()
         self._pyaudio.terminate()

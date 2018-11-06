@@ -285,3 +285,83 @@ Sleeping 1.400000 seconds, protocol to start transmitting.
 [2018-11-06 00:29:15,511] - [Receiver] - [INFO] - Receiver thread deactivated.
 [2018-11-06 00:29:15,517] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
 [2018-11-06 00:29:17,871] - [Receiver] - [INFO] - Shutting down physical layer.
+[2018-11-06 00:37:07,369] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
+[2018-11-06 00:37:07,370] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
+[2018-11-06 00:37:07,486] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
+[2018-11-06 00:37:07,503] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
+[2018-11-06 00:37:07,965] - [Receiver] - [INFO] - Receiver thread deactivated.
+[2018-11-06 00:37:07,977] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
+[2018-11-06 00:37:08,408] - [Receiver] - [INFO] - Shutting down physical layer.
+[2018-11-06 00:37:13,451] - [Receiver] - [INFO] - Shutting down physical layer.
+[2018-11-06 00:38:37,771] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
+[2018-11-06 00:38:37,772] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
+[2018-11-06 00:38:37,878] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
+[2018-11-06 00:38:37,884] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
+[2018-11-06 00:38:38,393] - [Receiver] - [INFO] - Receiver thread deactivated.
+[2018-11-06 00:38:38,404] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
+[2018-11-06 00:38:39,737] - [Receiver] - [INFO] - Shutting down physical layer.
+[2018-11-06 00:38:43,904] - [Receiver] - [INFO] - Shutting down physical layer.
+[2018-11-06 00:39:25,900] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
+[2018-11-06 00:39:25,902] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
+[2018-11-06 00:39:25,979] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
+[2018-11-06 00:39:25,985] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
+[2018-11-06 00:39:26,553] - [Receiver] - [INFO] - Receiver thread deactivated.
+[2018-11-06 00:39:26,559] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
+[2018-11-06 00:39:32,196] - [Receiver] - [INFO] - Shutting down physical layer.
+[2018-11-06 00:39:43,545] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
+[2018-11-06 00:39:43,546] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
+[2018-11-06 00:39:43,617] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
+[2018-11-06 00:39:43,623] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
+[2018-11-06 00:39:43,956] - [Receiver] - [INFO] - Receiver thread deactivated.
+[2018-11-06 00:39:43,962] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
+[2018-11-06 00:39:45,578] - [Receiver] - [INFO] - Shutting down physical layer.
+[2018-11-06 00:43:06,069] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
+[2018-11-06 00:43:06,087] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
+[2018-11-06 00:43:06,145] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
+[2018-11-06 00:43:06,157] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
+[2018-11-06 00:43:06,602] - [Receiver] - [INFO] - Receiver thread deactivated.
+[2018-11-06 00:43:06,608] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
+[2018-11-06 00:43:08,403] - [Receiver] - [INFO] - Shutting down physical layer.
+[2018-11-06 00:43:38,938] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
+[2018-11-06 00:43:38,939] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
+[2018-11-06 00:43:39,020] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
+[2018-11-06 00:43:39,030] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
+[2018-11-06 00:43:39,485] - [Receiver] - [INFO] - Receiver thread deactivated.
+[2018-11-06 00:43:39,513] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
+[2018-11-06 00:43:52,272] - [Receiver] - [INFO] - Shutting down physical layer.
+[2018-11-06 00:44:21,992] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
+[2018-11-06 00:44:21,992] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
+[2018-11-06 00:44:22,099] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
+[2018-11-06 00:44:22,132] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
+[2018-11-06 00:44:22,639] - [Receiver] - [INFO] - Receiver thread deactivated.
+[2018-11-06 00:44:22,660] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
+[2018-11-06 00:44:25,826] - [Receiver] - [INFO] - Shutting down physical layer.
+[2018-11-06 00:44:58,678] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
+[2018-11-06 00:44:58,683] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
+[2018-11-06 00:44:58,737] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
+[2018-11-06 00:44:58,737] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
+[2018-11-06 00:44:59,163] - [Receiver] - [INFO] - Receiver thread deactivated.
+[2018-11-06 00:44:59,180] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
+[2018-11-06 00:45:02,546] - [Receiver] - [INFO] - Shutting down physical layer.
+[2018-11-06 00:45:53,933] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
+[2018-11-06 00:45:53,933] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
+[2018-11-06 00:45:53,998] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
+[2018-11-06 00:45:54,000] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
+[2018-11-06 00:45:54,447] - [Receiver] - [INFO] - Receiver thread deactivated.
+[2018-11-06 00:45:54,453] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
+[2018-11-06 00:45:56,849] - [Receiver] - [INFO] - Shutting down physical layer.
+[2018-11-06 00:48:27,478] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
+[2018-11-06 00:48:27,479] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
+[2018-11-06 00:48:27,617] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
+[2018-11-06 00:48:27,624] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
+[2018-11-06 00:48:28,024] - [Receiver] - [INFO] - Receiver thread deactivated.
+[2018-11-06 00:48:28,030] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
+[2018-11-06 00:48:28,446] - [Receiver] - [INFO] - Shutting down physical layer.
+[2018-11-06 00:48:31,759] - [Receiver] - [INFO] - Shutting down physical layer.
+[2018-11-06 00:55:24,560] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
+[2018-11-06 00:55:24,561] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
+[2018-11-06 00:55:24,649] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
+[2018-11-06 00:55:24,673] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
+[2018-11-06 00:55:25,242] - [Receiver] - [INFO] - Receiver thread deactivated.
+[2018-11-06 00:55:25,248] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
+[2018-11-06 00:55:26,438] - [Receiver] - [INFO] - Shutting down physical layer.

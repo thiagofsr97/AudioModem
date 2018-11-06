@@ -65,22 +65,27 @@ class Link:
         return frame[0:3], frame[3:6], frame[OFFSET_DATA:len(frame) - 32], frame[-32:]
 
     def shutdown(self):
+        self._thread_receiver_status = False
+        self._thread_sender_status = False
         self._receiver.shutdown()
+
         self._logger.info('Shutting down linker.')
         self._deactivate_transmission()
-        self._thread_sender_status = False
-        self._thread_receiver_status = False
         self._shutdown = True
-        if self._thread_sender and self._thread_sender.is_alive():
-            self._thread_sender.join()
+
         self._queue_frame_buffer.put('')
         self._queue_buffer_receiver.put('')
-        # if self._thread_receiver and self._thread_receiver.is_alive():
-        #     self._thread_receiver.join()
+
+        if self._thread_sender and self._thread_sender.is_alive():
+            self._thread_sender.join()
+        if self._thread_receiver and self._thread_receiver.is_alive():
+            self._thread_receiver.join()
 
     def _transmission_reader(self):
         while self._thread_receiver_status:
             bit = self._receiver.read_bit()
+            if not self._thread_receiver_status:
+                break
             # bit_expected = '1' if not self._is_switch else '0'
             if bit == FRAME_FLAG:
                 self._logger.info('Frame flag detected. Analyzing frame.')
