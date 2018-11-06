@@ -33,9 +33,17 @@ class Logger:
             self.logger = logging.getLogger(logger_name)
             self.logger.setLevel(logging.DEBUG)
             self.logger.handlers.clear()
+
             ch = logging.StreamHandler(sys.stdout)
             ch.setLevel(logging.DEBUG)
             formatter = logging.Formatter('[%(asctime)s] - [%(name)s] - [%(levelname)s] - %(message)s')
             ch.setFormatter(formatter)
             self.logger.addHandler(ch)
+
+            ch = logging.FileHandler('Logging/' + logger_name + 'Logger.txt')
+            ch.setLevel(logging.DEBUG)
+            formatter = logging.Formatter('[%(asctime)s] - [%(name)s] - [%(levelname)s] - %(message)s')
+            ch.setFormatter(formatter)
+            self.logger.addHandler(ch)
+
         return self.logger

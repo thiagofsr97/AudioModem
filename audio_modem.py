@@ -5,28 +5,29 @@ from Utils.utils import IP_ADDRESS_1
 from Utils.utils import IP_ADDRESS_2_1
 from Utils.utils import IP_ADDRESS_2_2
 from Utils.utils import IP_ADDRESS_3
-from LinkLayer.link import Link
+
+import signal
+import sys
 import time
-import threading
 bits = []
 
-
+network = None
 def read_bits(times, receiver=Receiver()):
     for i in range(0, times):
         bit = receiver.read_bit()
         bits.append(bit)
         print('BIT RECEIVED: ' + bit)
 
+def signal_handler(signal, frame):
+    network.shutdown()
+    sys.exit(1)
 
 def main():
-    # link = Link('101')
-    # link.append_frame('101','001','1')
+    global network
     network = Network(IP_ADDRESS_1)
     network.start()
-    print('oiiajuxauxhauhx')
-    # time.sleep(2)
-    network.append_packet(IP_ADDRESS_3, IP_ADDRESS_1, '101')
-
+    network.append_packet('10.12', '12.4','1')
+    signal.signal(signal.SIGINT, signal_handler)
     time.sleep(1000)
 
 

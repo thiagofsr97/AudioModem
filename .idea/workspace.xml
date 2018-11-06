@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/PhysicalLayer/Receiver/audio_receiver.py" line="324" mnemonic="8" />
+    <bookmark url="file://$PROJECT_DIR$/PhysicalLayer/Receiver/audio_receiver.py" line="325" mnemonic="8" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7d4282d-ac14-42f6-b00d-c882f04dd2b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LinkLayer/link.py" beforeDir="false" afterPath="$PROJECT_DIR$/LinkLayer/link.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetworkLayer/network.py" beforeDir="false" afterPath="$PROJECT_DIR$/NetworkLayer/network.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhysicalLayer/Receiver/audio_receiver.py" beforeDir="false" afterPath="$PROJECT_DIR$/PhysicalLayer/Receiver/audio_receiver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utils/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/audio_modem.py" beforeDir="false" afterPath="$PROJECT_DIR$/audio_modem.py" afterDir="false" />
@@ -24,7 +25,7 @@
     <SUITE FILE_PATH="coverage/AudioModem$timer.coverage" NAME="timer Coverage Results" MODIFIED="1536326915854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AudioModem$receiver.coverage" NAME="receiver Coverage Results" MODIFIED="1536145436930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AudioModem$link.coverage" NAME="link Coverage Results" MODIFIED="1539715523303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LinkLayer" />
-    <SUITE FILE_PATH="coverage/AudioModem$audio_modem.coverage" NAME="audio_modem Coverage Results" MODIFIED="1541443547758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AudioModem$audio_modem.coverage" NAME="audio_modem Coverage Results" MODIFIED="1541470695981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AudioModem$stream_fft.coverage" NAME="stream_fft Coverage Results" MODIFIED="1541194552560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LinkLayer" />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -51,24 +52,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="29" />
+          <entry key="py" value="34" />
+          <entry key="txt" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="29" />
+          <entry key="PLAIN_TEXT" value="13" />
+          <entry key="Python" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="20" />
-          <entry key="py" value="27404" />
+          <entry key="py" value="29355" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="20" />
-          <entry key="Python" value="27404" />
+          <entry key="Python" value="29355" />
         </counts>
       </usages-collector>
     </session>
@@ -78,12 +81,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/audio_modem.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+            <state relative-caret-position="420">
+              <caret line="28" column="46" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="46" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
-                <marker date="1541443123712" expanded="true" signature="420:550" ph="..." />
-                <marker date="1541443123712" expanded="true" signature="547:550" ph="..." />
+                <marker date="1541472345085" expanded="true" signature="411:615" ph="..." />
+                <marker date="1541472345085" expanded="true" signature="538:615" ph="..." />
               </folding>
             </state>
           </provider>
@@ -93,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/PhysicalLayer/Sender/audio_sender.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+              <caret line="45" column="7" lean-forward="true" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -102,50 +105,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PhysicalLayer/Receiver/audio_receiver.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-529">
-              <caret line="207" column="38" selection-start-line="207" selection-start-column="38" selection-end-line="207" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-                <marker date="1541193191041" expanded="true" signature="11769:11811" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utils/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+            <state relative-caret-position="403">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LinkLayer/link.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="94" selection-start-line="94" selection-end-line="94" />
-              <folding>
-                <element signature="e#0#52#0" expanded="true" />
-                <marker date="1541442625733" expanded="true" signature="807:3374" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LinkLayer/stream_fft.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="37" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="37" />
-              <folding>
-                <element signature="e#42#74#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,16 +119,75 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NetworkLayer/network.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="53" column="125" selection-start-line="53" selection-start-column="125" selection-end-line="53" selection-end-column="125" />
+            <state relative-caret-position="396">
+              <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
-                <marker date="1541443524705" expanded="true" signature="288:293" ph="..." />
-                <marker date="1541443524705" expanded="true" signature="343:348" ph="..." />
-                <marker date="1541443524705" expanded="true" signature="924:1460" ph="..." />
-                <marker date="1541443524705" expanded="true" signature="1752:1758" ph="..." />
-                <marker date="1541443524705" expanded="true" signature="2063:2109" ph="..." />
-                <marker date="1541443524705" expanded="true" signature="2286:2392" ph="..." />
+                <marker date="1541474861326" expanded="true" signature="290:295" ph="..." />
+                <marker date="1541474861326" expanded="true" signature="345:350" ph="..." />
+                <marker date="1541474861326" expanded="true" signature="926:1622" ph="..." />
+                <marker date="1541474861326" expanded="true" signature="1894:1900" ph="..." />
+                <marker date="1541474861326" expanded="true" signature="2319:2347" ph="..." />
+                <marker date="1541474861326" expanded="true" signature="2845:2977" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Logging/NetworkLayerLogger.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="133" lean-forward="true" selection-start-line="7" selection-start-column="133" selection-end-line="7" selection-end-column="151" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Logging/ReceiverLogger.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Logging/SenderLogger.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Logging/LinkLayerLogger.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PhysicalLayer/Receiver/audio_receiver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1995">
+              <caret line="133" column="55" selection-start-line="133" selection-start-column="55" selection-end-line="133" selection-end-column="55" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+                <marker date="1541474711096" expanded="true" signature="11830:11872" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LinkLayer/link.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2062">
+              <caret line="151" column="47" selection-start-line="151" selection-start-column="47" selection-end-line="151" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#52#0" expanded="true" />
+                <marker date="1541474480407" expanded="true" signature="807:5387" ph="..." />
+                <marker date="1541474480407" expanded="true" signature="1603:3161" ph="..." />
               </folding>
             </state>
           </provider>
@@ -192,8 +216,17 @@
       <find>print</find>
       <find>appe</find>
       <find>shutdown</find>
-      <find>offse</find>
       <find>Sending</find>
+      <find>offse</find>
+      <find>getting</find>
+      <find>10101100110001001</find>
+      <find>110001001</find>
+      <find>auhh</find>
+      <find>get_frame</find>
+      <find>get_fram</find>
+      <find>queue_buffer_rec</find>
+      <find>reader</find>
+      <find>queue_frame_buff</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -211,10 +244,10 @@
         <option value="$PROJECT_DIR$/Receiver/audio_receiver.py" />
         <option value="$PROJECT_DIR$/LinkLayer/stream_fft.py" />
         <option value="$PROJECT_DIR$/PhysicalLayer/Sender/audio_sender.py" />
-        <option value="$PROJECT_DIR$/PhysicalLayer/Receiver/audio_receiver.py" />
         <option value="$PROJECT_DIR$/Utils/utils.py" />
-        <option value="$PROJECT_DIR$/LinkLayer/link.py" />
         <option value="$PROJECT_DIR$/audio_modem.py" />
+        <option value="$PROJECT_DIR$/LinkLayer/link.py" />
+        <option value="$PROJECT_DIR$/PhysicalLayer/Receiver/audio_receiver.py" />
         <option value="$PROJECT_DIR$/NetworkLayer/network.py" />
       </list>
     </option>
@@ -247,6 +280,16 @@
             <path>
               <item name="AudioModem" type="b2602c69:ProjectViewProjectNode" />
               <item name="AudioModem" type="462c0819:PsiDirectoryNode" />
+              <item name="LinkLayer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AudioModem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AudioModem" type="462c0819:PsiDirectoryNode" />
+              <item name="Logging" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AudioModem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AudioModem" type="462c0819:PsiDirectoryNode" />
               <item name="NetworkLayer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -257,7 +300,14 @@
             <path>
               <item name="AudioModem" type="b2602c69:ProjectViewProjectNode" />
               <item name="AudioModem" type="462c0819:PsiDirectoryNode" />
-              <item name="Utils" type="462c0819:PsiDirectoryNode" />
+              <item name="PhysicalLayer" type="462c0819:PsiDirectoryNode" />
+              <item name="Receiver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AudioModem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AudioModem" type="462c0819:PsiDirectoryNode" />
+              <item name="PhysicalLayer" type="462c0819:PsiDirectoryNode" />
+              <item name="Sender" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -444,15 +494,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
+    <frame x="64" y="-11" width="2497" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16972111" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08697428" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32845187" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36024845" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3043933" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39958158" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -534,24 +584,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/utils.py">
+    <entry file="file://$PROJECT_DIR$/Receiver.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LinkLayer.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NetworkLayer.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sender.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logging/LinkLayerLogger.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PhysicalLayer/Receiver/audio_receiver.py">
+    <entry file="file://$PROJECT_DIR$/Logging/ReceiverLogger.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-529">
-          <caret line="207" column="38" selection-start-line="207" selection-start-column="38" selection-end-line="207" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <marker date="1541193191041" expanded="true" signature="11769:11811" ph="..." />
-          </folding>
+        <state relative-caret-position="450">
+          <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -565,51 +620,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PhysicalLayer/Sender/audio_sender.py">
+    <entry file="file://$PROJECT_DIR$/Logging/SenderLogger.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logging/NetworkLayerLogger.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="7" column="133" lean-forward="true" selection-start-line="7" selection-start-column="133" selection-end-line="7" selection-end-column="151" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/audio_modem.py">
+    <entry file="file://$PROJECT_DIR$/Utils/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+        <state relative-caret-position="403">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
-            <element signature="e#0#52#0" expanded="true" />
-            <marker date="1541443123712" expanded="true" signature="420:550" ph="..." />
-            <marker date="1541443123712" expanded="true" signature="547:550" ph="..." />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LinkLayer/link.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
+        <state relative-caret-position="2062">
+          <caret line="151" column="47" selection-start-line="151" selection-start-column="47" selection-end-line="151" selection-end-column="47" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
-            <marker date="1541442625733" expanded="true" signature="807:3374" ph="..." />
+            <marker date="1541474480407" expanded="true" signature="807:5387" ph="..." />
+            <marker date="1541474480407" expanded="true" signature="1603:3161" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PhysicalLayer/Receiver/audio_receiver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="133" column="55" selection-start-line="133" selection-start-column="55" selection-end-line="133" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1541474711096" expanded="true" signature="11830:11872" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/audio_modem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="46" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+            <marker date="1541472345085" expanded="true" signature="411:615" ph="..." />
+            <marker date="1541472345085" expanded="true" signature="538:615" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PhysicalLayer/Sender/audio_sender.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="45" column="7" lean-forward="true" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NetworkLayer/network.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="53" column="125" selection-start-line="53" selection-start-column="125" selection-end-line="53" selection-end-column="125" />
+        <state relative-caret-position="396">
+          <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <marker date="1541443524705" expanded="true" signature="288:293" ph="..." />
-            <marker date="1541443524705" expanded="true" signature="343:348" ph="..." />
-            <marker date="1541443524705" expanded="true" signature="924:1460" ph="..." />
-            <marker date="1541443524705" expanded="true" signature="1752:1758" ph="..." />
-            <marker date="1541443524705" expanded="true" signature="2063:2109" ph="..." />
-            <marker date="1541443524705" expanded="true" signature="2286:2392" ph="..." />
+            <marker date="1541474861326" expanded="true" signature="290:295" ph="..." />
+            <marker date="1541474861326" expanded="true" signature="345:350" ph="..." />
+            <marker date="1541474861326" expanded="true" signature="926:1622" ph="..." />
+            <marker date="1541474861326" expanded="true" signature="1894:1900" ph="..." />
+            <marker date="1541474861326" expanded="true" signature="2319:2347" ph="..." />
+            <marker date="1541474861326" expanded="true" signature="2845:2977" ph="..." />
           </folding>
         </state>
       </provider>

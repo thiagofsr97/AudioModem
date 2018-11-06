@@ -36,19 +36,54 @@ class Link:
         self._receiver.start()
         self._sender = Sender('resources/500hz.wav', 'resources/800hz.wav')
         self._thread_sender_status = True
+        self._thread_receiver_status = True
+        self._thread_sender = None
+        self._thread_receiver = None
+        self._pc_address = pc_address
+        self._shutdown = False
+        # self._is_switch = is_switch
+
+
+    def start(self):
+        self._receiver = Receiver()
+        self._receiver.start()
+        self._sender = Sender('resources/500hz.wav', 'resources/800hz.wav')
         self._thread_sender = threading.Thread(target=self._send_frame)
         self._thread_sender.start()
-        self._thread_receiver_status = True
         self._thread_receiver = threading.Thread(target=self._transmission_reader)
         self._thread_receiver.start()
-        self._pc_address = pc_address
-        # self._is_switch = is_switch
+
+    def get_frame(self):
+        # if self._is_switch:
+        #     self._logger.error('Only nodes that are not switches are able to read data frames.')
+        #     return None
+        frame = self._queue_buffer_receiver.get()
+        if frame == '':
+            return None, None, None, None
+        self._logger.info('Getting data frame from linker and passing on to next layer. Frame: | %s | %s | %s | %s |'
+                          % (frame[0:3], frame[3:6], frame[OFFSET_DATA:len(frame) - 32], frame[-32:]))
+        return frame[0:3], frame[3:6], frame[OFFSET_DATA:len(frame) - 32], frame[-32:]
+
+    def shutdown(self):
+        self._receiver.shutdown()
+        self._logger.info('Shutting down linker.')
+        self._deactivate_transmission()
+        self._thread_sender_status = False
+        self._thread_receiver_status = False
+        self._shutdown = True
+        if self._thread_sender and self._thread_sender.is_alive():
+            self._thread_sender.join()
+        self._queue_frame_buffer.put('')
+        self._queue_buffer_receiver.put('')
+        # if self._thread_receiver and self._thread_receiver.is_alive():
+        #     self._thread_receiver.join()
 
     def _transmission_reader(self):
         while self._thread_receiver_status:
             bit = self._receiver.read_bit()
             # bit_expected = '1' if not self._is_switch else '0'
             if bit == FRAME_FLAG:
+                self._logger.info('Frame flag detected. Analyzing frame.')
                 frame = []
                 address = []
                 for i in range(0, 3):
@@ -56,26 +91,34 @@ class Link:
                     if bit_address != FRAME_FLAG:
                         address.append(bit_address)
                     else:
+                        self._logger.error('Frame corrupted, dispatching it.')
                         break
                 if len(address) != 3:
-                    break
+                    self._logger.error('Frame corrupted, dispatching it.')
+                    continue
                 # bit = self._receiver.read_bit()
                 # if bit_expected == bit:
                 if ''.join(address) == self._pc_address:
                     while bit != FRAME_FLAG:
                         frame.append(bit)
                         bit = self._receiver.read_bit()
+
+                    frame = ''.join(frame)
                     if self._check_frame(frame):
+                        self._logger.info('Frame has been analyzed and added to receiver buffer.')
+
                         self._queue_buffer_receiver.put(frame)
+                    else:
+                        self._logger.error('A error in the data has been found. Dispatching frame.')
                         # if self._is_switch:
                         #     self._append_frame_non_switch(self._queue_buffer_receiver.get())
                         # else:
                         #     self._append_control_frame('1')
                 frame.clear()
                 address.clear()
+        self._logger.info('Transmission Reader Deactivated.')
 
     def _check_frame(self, frame):
-
         if len(frame) < MIN_LENGHT:
             return False
         crc_bits = frame[-32:]
@@ -106,15 +149,17 @@ class Link:
     def _send_frame(self):
         while self._thread_sender_status:
             frame = self._queue_frame_buffer.get()
+            if not self._thread_receiver_status:
+                break
             # self._logger.info('Sending frame: [[' + frame[0] + '][' + frame[1] + ']['
             #                   + frame[2:len(frame)-32] + '][' + frame[-32:] + ']].')
-            self._logger.info('| %s | %s | %s | %s |' % (frame[0:3], frame[3:6],
-                                                         frame[OFFSET_DATA:len(frame) - 32], frame[-32:]))
+            self._logger.info('Sending frame: | %s | %s | %s | %s |' %
+                              (frame[0:3], frame[3:6], frame[OFFSET_DATA:len(frame) - 32], frame[-32:]))
 
             timeout = .5
             self._logger.info('Making first attempt of transmitting the frame.')
             sucess = self._send_attemptive(frame)
-            if not sucess:
+            if not sucess and not self._shutdown:
                 for i in range(1, N_ATTEMPTIVES):
                     self._logger.info('Attempt %d of transmitting the frame.' % (i+1))
                     if self._send_attemptive(frame, timeout=timeout):
@@ -123,6 +168,7 @@ class Link:
                         if i + 1 == N_ATTEMPTIVES:
                             self._logger.info('Number of attemps reached, aborting transmission.')
                         timeout=timeout*2
+        self._logger.info('Frame Sender Deactivated.')
 
     def _send_attemptive(self, frame, timeout=None):
         while self._receiver.is_there_transmission():
@@ -133,8 +179,8 @@ class Link:
         # self._thread_collision_detection = threading.Thread(target=self._receiver.has_collided,
         #                                                     kwargs=dict(callback=self._deactivate_transmission))
         # self._thread_collision_detection.start()
-        # if self._receiver.is_on():
-        #     self._receiver.switch_receiver()
+        if self._receiver.is_on():
+            self._receiver.switch_receiver()
         if timeout:
             timeout = uniform(0, timeout)
             self._logger.info('Sleeping for %d seconds before trying to send the frame.' % timeout)
@@ -150,29 +196,13 @@ class Link:
                 break
         if self._is_sending:
             self._sender.end_transmition()
-        # self._receiver.switch_receiver()
+        if self._is_sending:
+            self._receiver.switch_receiver()
         # self._receiver.detector_flag()
         # self._thread_collision_detection.join()
         if not self._is_sending:
             return False
         return True
 
-    def get_frame(self):
-        # if self._is_switch:
-        #     self._logger.error('Only nodes that are not switches are able to read data frames.')
-        #     return None
-        self._logger.info('Getting date frame from linker.')
-        frame = self._queue_buffer_receiver.get()
-        return frame[0:3], frame[3:6], frame[OFFSET_DATA:len(frame) - 32], frame[-32:]
 
-    def shutdown(self):
-        self._receiver.shutdown()
-        self._logger.info('Shutting down linker.')
-        self._deactivate_transmission()
-        self._thread_sender_status = False
-        self._thread_receiver_status = False
-        if self._thread_sender.is_alive():
-            self._thread_sender.join()
-        if self._thread_receiver.is_alive():
-            self._thread_receiver.join()
 

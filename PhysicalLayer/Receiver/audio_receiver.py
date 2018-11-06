@@ -112,6 +112,7 @@ class Receiver:
     def _start(self):
 
         self._logger.info('Idle state, waiting for transmission to start.')
+        self._logger.info('Timing %f seconds, in order to start the transmitting protocol.' % (CLOCK_TIME * 2))
         while self._is_receiving:
             vol = self._get_rms()
             # print(vol)
@@ -119,7 +120,6 @@ class Receiver:
             if vol == THRESHOLD_HIGH:
                 after = time.time()
                 remaining_clock_time = CLOCK_TIME * 2
-                self._logger.info('Sleeping %f seconds, protocol to start transmitting. ' % (CLOCK_TIME * 2))
                 is_ok = True
                 while after-begin <= remaining_clock_time-0.01:
                     after = time.time()
@@ -131,6 +131,7 @@ class Receiver:
                     self._logger.info('Transmission has started. Frame Flag detected.')
                     self._append_bit(str(FRAME_FLAG))
                     self._initiate_transmission()
+        self._logger.info('Receiver thread deactivated.')
 
     """
     Starts the transmission of bits by using Manchester Encoding.
@@ -145,7 +146,7 @@ class Receiver:
         while True:
             time.sleep(CLOCK_TIME * 0.3)
             vol = self._get_rms()
-            self._logger.info('Detected %f herz as first level.' % vol)
+            self._logger.info('Detected %f hertz as first level.' % vol)
             result = self._wait_for_transition(vol)
 
             if result != FRAME_FLAG and result != K_SYMBOL:
