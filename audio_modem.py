@@ -23,9 +23,9 @@ def signal_handler(signal, frame):
 
 def main():
     global network
-    network = Network(IP_ADDRESS_1)
+    network = Network(IP_ADDRESS_2_1, IP_ADDRESS_2_2)
     network.start()
-    network.append_packet('10.12', '12.4','1')
+    # network.append_packet('10.12', '12.4','1')
     signal.signal(signal.SIGINT, signal_handler)
 
 

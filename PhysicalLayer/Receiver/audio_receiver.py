@@ -69,7 +69,7 @@ class Receiver:
         buffer_ = []
         frequency = 0
         while self._is_recording:
-            for i in range(0, 4):
+            for i in range(0, 8):
                 self._data = self._stream.read(CHUNK)
                 if self._data:
                     frequency = self._pitch(self._data)
@@ -157,6 +157,7 @@ class Receiver:
                 print("(_initiate_transmission)String recebida: ", str("".join(self._bit_buffer)))
                 self._append_bit(str(FRAME_FLAG))
                 self._logger.info('FRAME FLAG detected. Closing frame and returning to initial state.')
+                time.sleep(0.3)
                 return
             else:
                 self._logger.info('K Symbol found. Returning to initial state.')

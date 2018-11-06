@@ -10,7 +10,7 @@ from Utils.utils import BUFFERSIZE
 from queue import Queue
 from random import uniform
 
-MIN_LENGHT = 39
+MIN_LENGHT = 33
 OFFSET_DATA = 6
 
 
@@ -85,37 +85,41 @@ class Link:
             self._thread_receiver.join()
 
     def _transmission_reader(self):
+        self._logger.info('Starting transmission reader....')
         while self._thread_receiver_status:
             bit = self._receiver.read_bit()
+            print('Bit lido: ' + bit)
             if not self._thread_receiver_status:
                 break
             # bit_expected = '1' if not self._is_switch else '0'
-            if bit == FRAME_FLAG:
+            if bit == str(FRAME_FLAG):
                 self._logger.info('Frame flag detected. Analyzing frame.')
                 frame = []
                 address = []
-                for i in range(0, 3):
+                for i in range(0, 6):
                     bit_address = self._receiver.read_bit()
-                    if bit_address != FRAME_FLAG:
+                    if bit_address != str(FRAME_FLAG):
                         address.append(bit_address)
                     else:
-                        self._logger.error('Frame corrupted, dispatching it.')
+                        self._logger.error('Frame corrupted, dispatching it.1')
                         break
-                if len(address) != 3:
-                    self._logger.error('Frame corrupted, dispatching it.')
+                self._logger.info('Address received: ' + ''.join(address))
+                if len(address) != 6:
+                    self._logger.error('Frame corrupted, dispatching it.2')
                     continue
                 # bit = self._receiver.read_bit()
                 # if bit_expected == bit:
-                if ''.join(address) == self._pc_address:
-                    while bit != FRAME_FLAG:
+                if ''.join(address[0:3]) == self._pc_address:
+                    bit = self._receiver.read_bit()
+                    while bit != str(FRAME_FLAG):
                         frame.append(bit)
                         bit = self._receiver.read_bit()
 
-                    frame = ''.join(frame)
-                    if self._check_frame(frame):
+                    self._logger.info('Frame mzr: ' + ''.join(frame))
+                    if self._check_frame(''.join(frame)):
                         self._logger.info('Frame has been analyzed and added to receiver buffer.')
 
-                        self._queue_buffer_receiver.put(frame)
+                        self._queue_buffer_receiver.put(''.join(address) + ''.join(frame))
                     else:
                         self._logger.error('A error in the data has been found. Dispatching frame.')
                         # if self._is_switch:
@@ -129,8 +133,8 @@ class Link:
         if len(frame) < MIN_LENGHT:
             return False
         crc_bits = frame[-32:]
-        data_bits = frame[OFFSET_DATA:len(frame)-32]
-        if crc_bits != self._calculate_crc(''.join(data_bits)):
+        data_bits = frame[0:len(frame)-32]
+        if ''.join(crc_bits) != self._calculate_crc(''.join(data_bits)):
             return False
         return True
 
@@ -138,7 +142,16 @@ class Link:
         self._is_sending = False
 
     def _calculate_crc(self, data_bits):
-        return str(format(self._crc_func(b'%d' % int(data_bits)), "b"))
+        crc = str(format(self._crc_func(b'%d' % int(data_bits)), "b"))
+        lenght = len(crc)
+        if lenght < 32:
+            append = []
+            for i in range(lenght, 32):
+                append.append('0')
+
+            crc = ''.join(append) + crc
+        self._logger.info('CRC LENGHT: %d CRC: %s' % (len(crc), crc))
+        return crc
 
     def append_frame(self, destination_mac_address, source_mac_address, data):
         # is_switcher_bit = '0'

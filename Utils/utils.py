@@ -1,7 +1,7 @@
 import logging
 import sys
 
-CLOCK_TIME =.7
+CLOCK_TIME = 1
 BUFFERSIZE = 200
 THRESHOLD = 6000
 THRESHOLD_HIGH = 800
@@ -40,7 +40,7 @@ class Logger:
             ch.setFormatter(formatter)
             self.logger.addHandler(ch)
 
-            ch = logging.FileHandler('Logging/' + logger_name + 'Logger.txt')
+            ch = logging.FileHandler('Logging/' + logger_name + 'Logger.txt', mode='w')
             ch.setLevel(logging.DEBUG)
             formatter = logging.Formatter('[%(asctime)s] - [%(name)s] - [%(levelname)s] - %(message)s')
             ch.setFormatter(formatter)

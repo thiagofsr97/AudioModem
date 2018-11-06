@@ -1,539 +1,283 @@
-Idle state, waiting for transmission to start.
-Idle state, waiting for transmission to start.
-Sleeping 1.400000 seconds, protocol to start transmitting. 
-Sleeping 1.400000 seconds, protocol to start transmitting. 
-Sleeping 1.400000 seconds, protocol to start transmitting. 
-Sleeping 1.400000 seconds, protocol to start transmitting. 
-Sleeping 1.400000 seconds, protocol to start transmitting. 
-Sleeping 1.400000 seconds, protocol to start transmitting. 
-Sleeping 1.400000 seconds, protocol to start transmitting. 
-Sleeping 1.400000 seconds, protocol to start transmitting. 
-Sleeping 1.400000 seconds, protocol to start transmitting. 
-Sleeping 1.400000 seconds, protocol to start transmitting. 
-Sleeping 1.400000 seconds, protocol to start transmitting. 
-[2018-11-05 22:06:52,918] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 22:06:53,032] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 22:06:53,669] - [Receiver] - [INFO] - Sleeping 1.400000 seconds, protocol to start transmitting. 
-[2018-11-05 22:06:54,293] - [Receiver] - [INFO] - Sleeping 1.400000 seconds, protocol to start transmitting. 
-[2018-11-05 22:06:55,341] - [Receiver] - [INFO] - Sleeping 1.400000 seconds, protocol to start transmitting. 
-[2018-11-05 22:06:56,613] - [Receiver] - [INFO] - Sleeping 1.400000 seconds, protocol to start transmitting. 
-[2018-11-05 22:06:58,761] - [Receiver] - [INFO] - Sleeping 1.400000 seconds, protocol to start transmitting. 
-[2018-11-05 22:07:02,201] - [Receiver] - [INFO] - Sleeping 1.400000 seconds, protocol to start transmitting. 
-[2018-11-05 22:07:02,400] - [Receiver] - [INFO] - Sleeping 1.400000 seconds, protocol to start transmitting. 
-[2018-11-05 22:47:11,078] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 22:47:11,079] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 22:47:11,170] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 22:47:11,177] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 22:54:44,796] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 22:54:44,797] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 22:54:44,932] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 22:54:44,937] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 22:54:45,419] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-05 23:00:30,512] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:00:30,512] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:00:30,641] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:00:30,647] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:00:31,112] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-05 23:03:34,074] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:03:34,075] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:03:34,150] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:03:34,166] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:03:34,720] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-05 23:04:17,019] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:04:17,020] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:04:17,152] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:04:17,158] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:04:17,591] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-05 23:14:57,828] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:14:57,828] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:14:57,903] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:14:57,909] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:14:58,356] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-05 23:15:14,258] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:15:14,259] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:15:14,314] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:15:14,314] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:15:15,056] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-05 23:15:49,615] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:15:49,616] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:15:49,648] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:15:49,653] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:15:50,185] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-05 23:18:16,381] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:18:16,381] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:18:16,532] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:18:16,552] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:18:17,248] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-05 23:18:44,740] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:18:44,741] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:18:44,797] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:18:44,830] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:18:45,411] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-05 23:20:20,796] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:20:20,796] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:20:20,850] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:20:20,856] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:20:21,466] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-05 23:21:42,644] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:21:42,645] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:21:42,774] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:21:42,785] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:23:42,560] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:23:42,561] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:23:42,642] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:23:42,652] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:23:43,179] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-05 23:23:44,312] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-05 23:23:44,771] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:23:44,778] - [Receiver] - [INFO] - Receiver has been restarted, getting audio data.
-[2018-11-05 23:23:44,784] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:23:45,028] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:23:45,035] - [Receiver] - [INFO] - Receiver has been restarted, getting audio data.
-[2018-11-05 23:23:45,040] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:23:49,763] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-05 23:26:23,935] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:26:23,936] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:26:24,006] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:26:24,016] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:26:24,672] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-05 23:26:25,586] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-05 23:26:26,272] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:26:26,278] - [Receiver] - [INFO] - Receiver has been restarted, getting audio data.
-[2018-11-05 23:26:26,278] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:26:26,557] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:26:26,593] - [Receiver] - [INFO] - Receiver has been restarted, getting audio data.
-[2018-11-05 23:26:26,598] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:27:32,550] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:27:32,601] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:27:32,668] - [Receiver] - [INFO] - Receiver has been restarted, getting audio data.
-[2018-11-05 23:28:34,659] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:28:34,660] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:28:34,738] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:28:34,772] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:28:35,246] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-05 23:28:36,827] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-05 23:28:37,823] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:28:37,829] - [Receiver] - [INFO] - Receiver has been restarted, getting audio data.
-[2018-11-05 23:28:37,830] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:28:38,108] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:28:38,119] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:28:38,120] - [Receiver] - [INFO] - Receiver has been restarted, getting audio data.
-[2018-11-05 23:28:50,398] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:28:50,399] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:28:50,510] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:28:50,518] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:28:51,096] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-05 23:28:51,355] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-05 23:28:52,662] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:28:52,667] - [Receiver] - [INFO] - Receiver has been restarted, getting audio data.
-[2018-11-05 23:28:52,681] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:28:53,026] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:28:53,032] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:28:53,037] - [Receiver] - [INFO] - Receiver has been restarted, getting audio data.
-[2018-11-05 23:29:25,058] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:29:25,059] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:29:25,147] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:29:25,153] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:29:25,690] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-05 23:29:26,800] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-05 23:29:27,266] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:29:27,282] - [Receiver] - [INFO] - Receiver has been restarted, getting audio data.
-[2018-11-05 23:29:27,282] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:29:27,517] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:29:27,523] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:29:27,533] - [Receiver] - [INFO] - Receiver has been restarted, getting audio data.
-[2018-11-05 23:32:28,106] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:32:28,106] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:32:28,196] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:32:28,201] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:32:28,865] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-05 23:32:31,042] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-05 23:32:31,391] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:32:31,392] - [Receiver] - [INFO] - Receiver has been restarted, getting audio data.
-[2018-11-05 23:32:31,397] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:32:31,628] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:32:31,634] - [Receiver] - [INFO] - Receiver has been restarted, getting audio data.
-[2018-11-05 23:32:31,667] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:36:18,055] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:36:18,056] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:36:18,108] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:36:18,115] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:36:18,639] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-05 23:36:22,860] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-05 23:42:25,726] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:42:25,727] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:42:25,772] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:42:25,772] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:42:26,971] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-05 23:42:27,227] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-05 23:43:31,050] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:43:31,051] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:43:31,155] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:43:31,161] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:43:31,806] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-05 23:43:33,859] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-05 23:44:06,771] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:44:06,772] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:44:06,829] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:44:06,836] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:44:07,462] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-05 23:44:08,047] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-05 23:44:44,016] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:44:44,016] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:44:44,202] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:44:44,220] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:44:44,748] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-05 23:44:45,455] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-05 23:45:13,785] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:45:13,785] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:45:13,871] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:45:13,879] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:45:14,465] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-05 23:45:17,865] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-05 23:45:51,674] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:45:51,674] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:45:51,756] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:45:51,767] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:45:52,319] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-05 23:45:54,506] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-05 23:45:57,312] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-05 23:57:52,510] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:57:52,511] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:57:52,635] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-05 23:57:52,635] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-05 23:57:52,996] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-05 23:57:55,155] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:05:11,775] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:05:11,775] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:05:11,926] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:05:11,928] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:05:12,291] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 00:05:14,503] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:06:00,778] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:06:00,779] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:06:00,843] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:06:00,849] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:06:01,287] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 00:06:03,411] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:06:53,810] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:06:53,811] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:06:53,863] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:06:53,869] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:06:54,143] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 00:07:01,681] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:07:33,275] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:07:33,278] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:07:33,319] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:07:33,323] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:07:33,707] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 00:07:35,507] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:08:50,347] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:08:50,348] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:08:50,422] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:08:50,452] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:08:50,729] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 00:08:53,744] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:09:15,485] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:09:15,485] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:09:15,571] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:09:15,583] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:09:15,943] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 00:09:16,705] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:12:08,828] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:12:08,829] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:12:08,903] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:12:08,903] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:12:09,293] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 00:12:11,989] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:16:22,668] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:16:22,670] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:16:22,751] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:16:22,758] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:16:23,042] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 00:16:25,193] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:16:55,253] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:16:55,253] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:16:55,348] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:16:55,348] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:16:55,729] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 00:16:57,421] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:17:14,818] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:20:33,022] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:20:33,023] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:20:33,123] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:20:33,137] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:20:33,578] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 00:20:35,742] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:25:20,046] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:25:20,047] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:25:20,110] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:25:20,113] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:25:20,487] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 00:25:20,495] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 00:25:22,859] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:27:48,975] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:27:48,975] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:27:49,056] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:27:49,056] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:27:49,474] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 00:27:49,481] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 00:27:51,878] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:29:15,102] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:29:15,102] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:29:15,157] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:29:15,166] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:29:15,511] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 00:29:15,517] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 00:29:17,871] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:37:07,369] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:37:07,370] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:37:07,486] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:37:07,503] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:37:07,965] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 00:37:07,977] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 00:37:08,408] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:37:13,451] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:38:37,771] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:38:37,772] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:38:37,878] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:38:37,884] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:38:38,393] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 00:38:38,404] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 00:38:39,737] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:38:43,904] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:39:25,900] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:39:25,902] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:39:25,979] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:39:25,985] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:39:26,553] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 00:39:26,559] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 00:39:32,196] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:39:43,545] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:39:43,546] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:39:43,617] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:39:43,623] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:39:43,956] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 00:39:43,962] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 00:39:45,578] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:43:06,069] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:43:06,087] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:43:06,145] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:43:06,157] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:43:06,602] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 00:43:06,608] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 00:43:08,403] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:43:38,938] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:43:38,939] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:43:39,020] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:43:39,030] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:43:39,485] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 00:43:39,513] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 00:43:52,272] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:44:21,992] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:44:21,992] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:44:22,099] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:44:22,132] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:44:22,639] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 00:44:22,660] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 00:44:25,826] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:44:58,678] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:44:58,683] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:44:58,737] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:44:58,737] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:44:59,163] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 00:44:59,180] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 00:45:02,546] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:45:53,933] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:45:53,933] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:45:53,998] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:45:54,000] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:45:54,447] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 00:45:54,453] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 00:45:56,849] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:48:27,478] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:48:27,479] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:48:27,617] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:48:27,624] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:48:28,024] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 00:48:28,030] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 00:48:28,446] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:48:31,759] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 00:55:24,560] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:55:24,561] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:55:24,649] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 00:55:24,673] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 00:55:25,242] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 00:55:25,248] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 00:55:26,438] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:01:50,027] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:01:52,938] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:01:52,939] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:01:53,000] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:01:53,000] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:01:53,322] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 01:01:53,337] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 01:01:54,927] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:02:00,067] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:02:01,909] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:02:01,910] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:02:01,990] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:02:01,990] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:02:02,438] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 01:02:02,451] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 01:02:05,806] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:02:27,395] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:02:30,407] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:02:30,408] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:02:30,443] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:02:30,443] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:02:30,887] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 01:02:30,894] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 01:02:33,341] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:03:17,374] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:03:17,375] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:03:17,458] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:03:17,470] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:03:17,997] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 01:03:18,003] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 01:03:19,386] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:05:16,186] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:05:18,419] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:05:18,422] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:05:18,553] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:05:18,557] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:05:18,969] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 01:05:18,972] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 01:05:23,054] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:05:23,115] - [Receiver] - [INFO] - ashuahsuahsuasas
-[2018-11-06 01:06:58,326] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:06:59,833] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:06:59,835] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:06:59,862] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:06:59,869] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:07:00,393] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 01:07:00,399] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 01:07:01,379] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:08:41,003] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:08:41,097] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:08:41,122] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:08:41,132] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:08:41,778] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 01:08:41,818] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 01:09:03,574] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:10:07,006] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:10:07,006] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:10:07,150] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:10:07,156] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:10:07,755] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 01:10:07,767] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 01:10:11,298] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:10:39,542] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:10:39,566] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:10:39,626] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:10:39,652] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:10:40,352] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 01:10:40,366] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 01:10:46,842] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:10:46,848] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:10:46,922] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:10:46,965] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:10:47,446] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 01:10:47,455] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 01:10:48,668] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:10:48,707] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:10:57,457] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:10:57,476] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:10:57,570] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:10:57,596] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:10:58,220] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 01:10:58,228] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 01:11:09,935] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:12:35,759] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:12:35,760] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:12:35,868] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:12:35,875] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:12:36,199] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 01:12:36,205] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 01:12:38,478] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:12:55,346] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:12:55,368] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:12:55,412] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:12:55,451] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:12:56,082] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 01:12:56,098] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 01:12:59,802] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:13:15,467] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:13:17,608] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:13:17,608] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:13:17,663] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:13:17,663] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:13:18,132] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 01:13:18,143] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 01:13:19,074] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:14:07,391] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:14:07,402] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:14:07,477] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:14:07,486] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:14:08,119] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 01:14:08,140] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 01:14:26,789] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:16:36,351] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:16:36,354] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:16:36,384] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:16:36,390] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:16:36,763] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 01:16:36,769] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 01:16:37,916] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:16:50,423] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:16:50,430] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:16:50,586] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:16:50,596] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:16:51,241] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 01:16:51,253] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 01:17:01,970] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:17:15,645] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:17:15,649] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:17:15,702] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:17:15,708] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:17:16,185] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 01:17:16,197] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 01:17:22,868] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:17:48,802] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:17:48,802] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:17:48,879] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:17:48,906] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:17:49,588] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 01:17:49,602] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 01:17:52,350] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:18:06,027] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:18:06,028] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:18:06,136] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:18:06,136] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:18:07,144] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 01:18:07,166] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 01:18:09,397] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:18:34,664] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:18:34,669] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:18:34,768] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:18:34,777] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:18:35,473] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 01:18:35,486] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 01:18:38,969] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:22:55,797] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:22:55,798] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:22:56,150] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 01:22:56,150] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 01:22:58,588] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:23:28,291] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:23:28,292] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:23:28,655] - [Receiver] - [INFO] - Receiver thread deactivated.
-[2018-11-06 01:23:28,656] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 01:23:30,606] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:25:46,016] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:25:46,018] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:25:46,345] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 01:25:49,387] - [Receiver] - [INFO] - Shutting down physical layer.
-[2018-11-06 01:30:32,409] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
-[2018-11-06 01:30:32,410] - [Receiver] - [INFO] - Timing 1.400000 seconds, in order to start the transmitting protocol.
-[2018-11-06 01:30:32,781] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
-[2018-11-06 01:30:36,825] - [Receiver] - [INFO] - Shutting down Receiver.
+[2018-11-06 09:07:55,978] - [Receiver] - [INFO] - Idle state, waiting for transmission to start.
+[2018-11-06 09:07:55,978] - [Receiver] - [INFO] - Timing 2.000000 seconds, in order to start the transmitting protocol.
+[2018-11-06 09:08:07,638] - [Receiver] - [INFO] - Transmission has started. Frame Flag detected.
+[2018-11-06 09:08:07,938] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:08:08,440] - [Receiver] - [INFO] - Found transition from noise to silence after 0.5011181831359863 seconds.
+[2018-11-06 09:08:08,440] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:08,941] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:08:08,941] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:08:09,241] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:08:09,944] - [Receiver] - [INFO] - Found transition from silence to noise after 0.7023334503173828 seconds.
+[2018-11-06 09:08:09,945] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:10,445] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:08:10,445] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:08:10,746] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:08:11,248] - [Receiver] - [INFO] - Found transition from noise to silence after 0.5013093948364258 seconds.
+[2018-11-06 09:08:11,248] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:11,749] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:08:11,749] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:08:12,049] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:08:12,551] - [Receiver] - [INFO] - Found transition from noise to silence after 0.501187801361084 seconds.
+[2018-11-06 09:08:12,552] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:13,052] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:08:13,053] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:08:13,353] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:08:13,655] - [Receiver] - [INFO] - Found transition from noise to silence after 0.3009171485900879 seconds.
+[2018-11-06 09:08:13,655] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:14,156] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:08:14,156] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:08:14,457] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:08:15,160] - [Receiver] - [INFO] - Found transition from noise to silence after 0.7017526626586914 seconds.
+[2018-11-06 09:08:15,160] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:15,661] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:08:15,661] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:08:15,963] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:08:16,466] - [Receiver] - [INFO] - Found transition from silence to noise after 0.5022916793823242 seconds.
+[2018-11-06 09:08:16,467] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:16,967] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:08:16,968] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:08:17,268] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:08:17,771] - [Receiver] - [INFO] - Found transition from noise to silence after 0.5017127990722656 seconds.
+[2018-11-06 09:08:17,771] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:18,272] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:08:18,272] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:08:18,573] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:08:19,075] - [Receiver] - [INFO] - Found transition from silence to noise after 0.5013775825500488 seconds.
+[2018-11-06 09:08:19,075] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:19,577] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:08:19,577] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:08:19,878] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:08:20,380] - [Receiver] - [INFO] - Found transition from noise to silence after 0.5013628005981445 seconds.
+[2018-11-06 09:08:20,380] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:20,881] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:08:20,882] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:08:21,182] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:08:21,686] - [Receiver] - [INFO] - Found transition from noise to silence after 0.5014133453369141 seconds.
+[2018-11-06 09:08:21,686] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:22,187] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:08:22,187] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:08:22,487] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:08:22,989] - [Receiver] - [INFO] - Found transition from noise to silence after 0.5013294219970703 seconds.
+[2018-11-06 09:08:22,990] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:23,490] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:08:23,491] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:08:23,791] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:08:24,494] - [Receiver] - [INFO] - Found transition from silence to noise after 0.7019729614257812 seconds.
+[2018-11-06 09:08:24,495] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:24,995] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:08:24,995] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:08:25,296] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:08:25,798] - [Receiver] - [INFO] - Found transition from noise to silence after 0.5014352798461914 seconds.
+[2018-11-06 09:08:25,798] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:26,299] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:08:26,300] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:08:26,600] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:08:27,202] - [Receiver] - [INFO] - Found transition from silence to noise after 0.6014971733093262 seconds.
+[2018-11-06 09:08:27,203] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:27,703] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:08:27,703] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:08:28,004] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:08:28,406] - [Receiver] - [INFO] - Found transition from silence to noise after 0.40096044540405273 seconds.
+[2018-11-06 09:08:28,406] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:28,906] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:08:28,907] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:08:29,207] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:08:29,809] - [Receiver] - [INFO] - Found transition from noise to silence after 0.6015188694000244 seconds.
+[2018-11-06 09:08:29,810] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:30,310] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:08:30,310] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:08:30,611] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:08:31,013] - [Receiver] - [INFO] - Found transition from noise to silence after 0.40178704261779785 seconds.
+[2018-11-06 09:08:31,014] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:31,515] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:08:31,515] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:08:31,817] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:08:32,218] - [Receiver] - [INFO] - Found transition from noise to silence after 0.4009718894958496 seconds.
+[2018-11-06 09:08:32,219] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:32,719] - [Receiver] - [INFO] - Detected 883.000000 hertz as second level.
+[2018-11-06 09:08:32,719] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:08:33,020] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:08:33,722] - [Receiver] - [INFO] - Found transition from silence to noise after 0.7017230987548828 seconds.
+[2018-11-06 09:08:33,723] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:34,223] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:08:34,223] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:08:34,524] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:08:35,026] - [Receiver] - [INFO] - Found transition from noise to silence after 0.501248836517334 seconds.
+[2018-11-06 09:08:35,026] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:35,527] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:08:35,527] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:08:35,827] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:08:36,329] - [Receiver] - [INFO] - Found transition from noise to silence after 0.5012993812561035 seconds.
+[2018-11-06 09:08:36,330] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:36,831] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:08:36,831] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:08:37,131] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:08:37,634] - [Receiver] - [INFO] - Found transition from silence to noise after 0.5013017654418945 seconds.
+[2018-11-06 09:08:37,635] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:38,135] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:08:38,135] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:08:38,436] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:08:38,937] - [Receiver] - [INFO] - Found transition from noise to silence after 0.5013132095336914 seconds.
+[2018-11-06 09:08:38,938] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:39,438] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:08:39,438] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:08:39,739] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:08:40,241] - [Receiver] - [INFO] - Found transition from silence to noise after 0.5013313293457031 seconds.
+[2018-11-06 09:08:40,242] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:40,742] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:08:40,742] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:08:41,043] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:08:41,746] - [Receiver] - [INFO] - Found transition from noise to silence after 0.7021262645721436 seconds.
+[2018-11-06 09:08:41,746] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:42,247] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:08:42,247] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:08:42,548] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:08:43,051] - [Receiver] - [INFO] - Found transition from silence to noise after 0.5022692680358887 seconds.
+[2018-11-06 09:08:43,052] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:43,552] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:08:43,552] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:08:43,853] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:08:44,556] - [Receiver] - [INFO] - Found transition from noise to silence after 0.7017841339111328 seconds.
+[2018-11-06 09:08:44,556] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:45,057] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:08:45,057] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:08:45,357] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:08:45,860] - [Receiver] - [INFO] - Found transition from silence to noise after 0.5015156269073486 seconds.
+[2018-11-06 09:08:45,860] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:46,361] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:08:46,361] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:08:46,661] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:08:47,264] - [Receiver] - [INFO] - Found transition from noise to silence after 0.6015663146972656 seconds.
+[2018-11-06 09:08:47,264] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:47,765] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:08:47,765] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:08:48,066] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:08:48,568] - [Receiver] - [INFO] - Found transition from silence to noise after 0.5013489723205566 seconds.
+[2018-11-06 09:08:48,568] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:49,068] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:08:49,068] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:08:49,369] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:08:50,072] - [Receiver] - [INFO] - Found transition from noise to silence after 0.7018177509307861 seconds.
+[2018-11-06 09:08:50,073] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:50,573] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:08:50,573] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:08:50,874] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:08:51,376] - [Receiver] - [INFO] - Found transition from noise to silence after 0.5010719299316406 seconds.
+[2018-11-06 09:08:51,376] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:51,877] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:08:51,877] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:08:52,177] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:08:52,880] - [Receiver] - [INFO] - Found transition from noise to silence after 0.7016606330871582 seconds.
+[2018-11-06 09:08:52,880] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:53,381] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:08:53,381] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:08:53,681] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:08:54,183] - [Receiver] - [INFO] - Found transition from silence to noise after 0.501248836517334 seconds.
+[2018-11-06 09:08:54,184] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:54,684] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:08:54,684] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:08:54,985] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:08:55,689] - [Receiver] - [INFO] - Found transition from silence to noise after 0.7031669616699219 seconds.
+[2018-11-06 09:08:55,689] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:56,190] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:08:56,190] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:08:56,491] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:08:56,993] - [Receiver] - [INFO] - Found transition from silence to noise after 0.501610279083252 seconds.
+[2018-11-06 09:08:56,993] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:57,494] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:08:57,494] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:08:57,795] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:08:58,297] - [Receiver] - [INFO] - Found transition from silence to noise after 0.5016133785247803 seconds.
+[2018-11-06 09:08:58,298] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:08:58,798] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:08:58,798] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:08:59,099] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:08:59,601] - [Receiver] - [INFO] - Found transition from silence to noise after 0.5014564990997314 seconds.
+[2018-11-06 09:08:59,602] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:09:00,102] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:09:00,102] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:09:00,403] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:09:00,905] - [Receiver] - [INFO] - Found transition from silence to noise after 0.5013093948364258 seconds.
+[2018-11-06 09:09:00,905] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:09:01,405] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:09:01,406] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:09:01,706] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:09:02,409] - [Receiver] - [INFO] - Found transition from silence to noise after 0.7026998996734619 seconds.
+[2018-11-06 09:09:02,410] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:09:02,911] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:09:02,911] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:09:03,212] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:09:03,513] - [Receiver] - [INFO] - Found transition from silence to noise after 0.30074477195739746 seconds.
+[2018-11-06 09:09:03,514] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:09:04,014] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:09:04,014] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:09:04,315] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:09:04,918] - [Receiver] - [INFO] - Found transition from silence to noise after 0.6016237735748291 seconds.
+[2018-11-06 09:09:04,918] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:09:05,418] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:09:05,419] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:09:05,719] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:09:06,221] - [Receiver] - [INFO] - Found transition from noise to silence after 0.5013406276702881 seconds.
+[2018-11-06 09:09:06,222] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:09:06,722] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:09:06,722] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:09:07,023] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:09:07,726] - [Receiver] - [INFO] - Found transition from silence to noise after 0.7025003433227539 seconds.
+[2018-11-06 09:09:07,727] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:09:08,227] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:09:08,228] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:09:08,529] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:09:09,031] - [Receiver] - [INFO] - Found transition from silence to noise after 0.50140380859375 seconds.
+[2018-11-06 09:09:09,031] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:09:09,532] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:09:09,532] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:09:09,832] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:09:10,535] - [Receiver] - [INFO] - Found transition from noise to silence after 0.7020962238311768 seconds.
+[2018-11-06 09:09:10,536] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:09:11,036] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:09:11,036] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:09:11,337] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:09:11,639] - [Receiver] - [INFO] - Found transition from noise to silence after 0.30088067054748535 seconds.
+[2018-11-06 09:09:11,639] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:09:12,139] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:09:12,140] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:09:12,441] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:09:12,943] - [Receiver] - [INFO] - Found transition from silence to noise after 0.5013487339019775 seconds.
+[2018-11-06 09:09:12,943] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:09:13,444] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:09:13,444] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:09:13,744] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:09:14,447] - [Receiver] - [INFO] - Found transition from noise to silence after 0.7017171382904053 seconds.
+[2018-11-06 09:09:14,448] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:09:14,948] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:09:14,948] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:09:15,249] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:09:15,550] - [Receiver] - [INFO] - Found transition from noise to silence after 0.30082154273986816 seconds.
+[2018-11-06 09:09:15,551] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:09:16,051] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:09:16,051] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:09:16,352] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:09:17,054] - [Receiver] - [INFO] - Found transition from silence to noise after 0.7017519474029541 seconds.
+[2018-11-06 09:09:17,055] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:09:17,556] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:09:17,556] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:09:17,856] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:09:18,358] - [Receiver] - [INFO] - Found transition from silence to noise after 0.5012142658233643 seconds.
+[2018-11-06 09:09:18,359] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:09:18,859] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:09:18,859] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:09:19,161] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:09:19,763] - [Receiver] - [INFO] - Found transition from silence to noise after 0.6016976833343506 seconds.
+[2018-11-06 09:09:19,764] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:09:20,264] - [Receiver] - [INFO] - Detected 500.000000 hertz as second level.
+[2018-11-06 09:09:20,264] - [Receiver] - [INFO] - Bit read: 1
+[2018-11-06 09:09:20,565] - [Receiver] - [INFO] - Detected 500.000000 hertz as first level.
+[2018-11-06 09:09:21,168] - [Receiver] - [INFO] - Found transition from noise to silence after 0.6025116443634033 seconds.
+[2018-11-06 09:09:21,169] - [Receiver] - [INFO] - Trying to resynchronize. Capturing transition in a interval of 0.500000. seconds
+[2018-11-06 09:09:21,669] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:09:21,669] - [Receiver] - [INFO] - Bit read: 0
+[2018-11-06 09:09:21,970] - [Receiver] - [INFO] - Detected 800.000000 hertz as first level.
+[2018-11-06 09:09:22,773] - [Receiver] - [INFO] - Detected 800.000000 hertz as second level.
+[2018-11-06 09:09:22,774] - [Receiver] - [INFO] - FRAME FLAG detected. Closing frame and returning to initial state.
+[2018-11-06 09:09:23,245] - [Receiver] - [INFO] - Receiver has been paused, not getting any audio data.
+[2018-11-06 09:09:31,680] - [Receiver] - [INFO] - Shutting down Receiver.

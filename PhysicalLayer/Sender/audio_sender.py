@@ -63,7 +63,7 @@ class Sender:
 
     def end_transmition(self):
         self._logger.info('Playing sound for %f seconds indicating ending of transmission.' % CLOCK_TIME)
-        self._play_for_seconds(CLOCK_TIME*2, self._wave_file_2)
+        self._play_for_seconds(CLOCK_TIME, self._wave_file_2)
 
 
 

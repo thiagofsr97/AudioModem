@@ -13,7 +13,7 @@ IP_BITS_LENGHT = 8
 
 class Network:
     def __init__(self, ip_address, ip_address_2=None):
-        self._pc_address = PC_ADDRESS_1
+        self._pc_address = PC_ADDRESS_2
         self._linker = None
         self._logger = Logger().get_instance('NetworkLayer')
         self._queue_sender = Queue(BUFFERSIZE)
@@ -86,23 +86,23 @@ class Network:
             source_ip = data[IP_BITS_LENGHT:IP_BITS_LENGHT*2]
             self._logger.info('Reading frame received from link layer... Packet: | %s | %s | %s | %s | %s | %s |' %
                               (dest_mac, source_mac, dest_ip, source_ip, data[IP_BITS_LENGHT*2:], crc))
-            if (dest_ip == self._convert_ip_bin(self._ip_address)) or (self._ip_address_2 and dest_ip == self._convert_ip_bin(self._ip_address_2)):
+            if (''.join(dest_ip) == self._convert_ip_bin(self._ip_address)) or (self._ip_address_2 and ''.join(dest_ip) == self._convert_ip_bin(self._ip_address_2)):
                 self._logger.info('Destination ip is referring to this host. Packet being stored in Network Storaged.')
                 self._queue_reader.put([dest_mac, source_mac, dest_ip, source_ip, data, crc])
             else:
                 mac_address = None
                 if self._is_gateway:
                     for row in self._routing_table:
-                        if self._convert_ip_bin(row[0]) == dest_ip:
-                            mac_address = row[3]
-                            self._logger('Destination ip found in routing table. Sending packet over to Host of MacAddress: %s...' % mac_address)
+                        if self._convert_ip_bin(row[0]) == ''.join(dest_ip):
+                            mac_address = row[2]
+                            self._logger.info('Destination ip found in routing table. Sending packet over to Host of MacAddress: %s...' % mac_address)
                             dest_mac = mac_address
                             source_mac = self._pc_address
-                            self._queue_sender.put([dest_mac, source_mac, dest_ip + source_ip + data + crc])
+                            self._queue_sender.put([dest_mac, source_mac, ''.join(data)])
 
                     if not mac_address:
                         self._logger.error('Destination ip %d.%d not found in routing table... Dispatching packet.' %
-                                           (int(dest_ip[0:IP_BITS_LENGHT], 2), int(dest_ip[IP_BITS_LENGHT:IP_BITS_LENGHT*2], 2)))
+                                           (int(''.join(dest_ip[0:IP_BITS_LENGHT], 2)), int(''.join(dest_ip[IP_BITS_LENGHT:IP_BITS_LENGHT*2], 2))))
 
                 else:
                     self._logger.error('Packet read couldn\'t be redirected. Dispatching it...')
